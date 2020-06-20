@@ -1,4 +1,4 @@
-# WhatsApp web dark theme
+# WhatsApp Web Dark Theme
 
 ## Neat dark theme for WhatsApp web
 

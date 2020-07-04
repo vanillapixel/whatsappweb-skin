@@ -127,6 +127,7 @@ span[data-icon="status-sticker"] svg path,
 span[data-icon="status-document"] svg path,
 span[data-icon="status-time"] svg path,
 span[data-icon="status-gif"] svg path,
+span[data-icon="status-vcard"] svg path,
 span[data-icon="recalled-in"] svg path,
 span[data-icon="video-pip"] svg path,
 span[data-icon="video-pause"] svg path,
@@ -380,7 +381,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._3gBQS,
 .KeLEe,
 ._2zpSw,
-._2Oo_9 {
+._2Oo_9,
+._1Ar0V._1t3gq {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -521,7 +523,8 @@ html[dir="ltr"] ._1F9Ap,
 ._3gJlY,
 .h70RQ,
 .h70RQ:after,
-._2iML2 {
+._2iML2,
+._3S3Sz {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -574,7 +577,8 @@ header span._1wjpf._3NFp9._3FXB1,
 ._18cLH,
 ._2k4eS,
 .FIHAk._3QjfB,
-.YaHbb {
+.YaHbb,
+._16q36 {
   color: var(--mainColor) !important;
 }
 

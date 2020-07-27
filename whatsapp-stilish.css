@@ -666,8 +666,10 @@
   .message-out ._2Wx_5,
   .message-in ._2Wx_5,
   .message-in,
-  ._2Mg6D .CzI8E {
+  ._2Mg6D .CzI8E,
+  ._1q11a._2nBjH {
     background-color: transparent !important;
+    background: transparent !important;
   }
 
   /*======== transparent color ========*/
@@ -738,10 +740,6 @@
   span[title="typing…"],
   ._2a1Yw {
     color: var(--mainColor) !important;
-  }
-
-  ._1q11a._2nBjH {
-    background: var(--darkerGray) !important;
   }
 
   /*========= group chat names =========*/

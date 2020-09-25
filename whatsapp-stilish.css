@@ -19,7 +19,7 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--mainColor);
+    background-color: var(--mainColor) !important;
   }
   *::-webkit-scrollbar-track {
     background: var(--lightGray) !important;
@@ -34,13 +34,14 @@
   body {
     background-image: -webkit-linear-gradient(top, black, black) !important;
   }
-  [data-asset-intro-image-light] {
+  [data-asset-intro-image-light],
+  [data-asset-intro-image-dark] {
     position: relative;
     top: 100px;
     background-image: url(http://i.imgur.com/Nzo0SUV.png);
     border-radius: 0px !important;
     filter: hue-rotate(-167deg);
-    transform: scale(0.3) !important;
+    transform: scale(0.5) !important;
   }
   .title {
     color: #fff;
@@ -96,6 +97,9 @@
 
   div[role="button"] svg path,
   span[data-icon="status-dblcheck"] svg path,
+  span[data-icon="chevron-right-alt"] svg path,
+  span[data-icon="checkbox-round-unchecked"] svg path,
+  span[data-icon="checkbox-round-checked"] svg path:nth-child(1),
   span[data-icon="round-x-inv"] svg path,
   span[data-icon="round-send-inv"] svg path,
   span[data-icon="round-x-inv"] svg path,
@@ -115,6 +119,7 @@
   span[data-icon="recalled"] svg path,
   span[data-icon="refresh"] svg path,
   span[data-icon="round-send-inv"] svg path,
+  span[data-icon="star"] svg path,
   span[data-icon="star-btn"] svg path,
   span[data-icon="status-check"] svg path,
   span[data-icon="status-audio"] svg path,
@@ -557,7 +562,7 @@
   ._3CneP,
   .m61XR,
   .DP7CM,
-  ._357i8 ._3ko75,
+  ._3CneP ._3ko75,
   .DP7CM ._3Whw5,
   ._1E1g0 ._3Whw5,
   ._2dH1A,
@@ -580,7 +585,8 @@
   ._2k4eS,
   .FIHAk._3QjfB,
   .YaHbb,
-  ._16q36 {
+  ._16q36,
+  ._21i7o:before {
     color: var(--mainColor) !important;
   }
 

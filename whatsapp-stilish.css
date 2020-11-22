@@ -3,7 +3,7 @@
 /* @import url("https://fonts.googleapis.com/css?family=Raleway"); */
 
 /* ignore the error icon below if using the Stylish code editor*/
-:root {
+:root .dark, :root {
   /* color-scheme n.1 */
   --superLightGray: #9e9e9e;
   --lightGray: rgb(85, 85, 85);
@@ -21,8 +21,8 @@
   --alertMessageSize: 17x;
   --audio-progress-played-incoming: var(--mainColor) !important;
   --audio-progress-played-outgoing: var(--mainColor) !important;
-  --cl-1: #4062BB;
-  --cl-2: #59C3C3;
+  --cl-1: var(--mainColor) !important;
+  --cl-2: var(--mainColor) !important;
   --cl-3: #373F51;
   --cl-4: #8B2635;
   --cl-5: #E0479E;
@@ -36,7 +36,8 @@
   --cl-13: #A3320B;
 }
 
-*::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb,
+.dark .bg-color-2 {
   background-color: var(--mainColor) !important;
 }
 *::-webkit-scrollbar-track {
@@ -722,7 +723,8 @@ input[type="radio"]:checked,
 ._2vTBi ._1VzZY,
 .RXL_k,
 .dark .bg-color-1,
-._3yI1b:before {
+._3yI1b:before,
+._27KDP:after {
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: white !important;

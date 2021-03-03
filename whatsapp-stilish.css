@@ -392,7 +392,9 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._3NBUs,
 ._1NQpW,
 ._1npKH,
-.VMhw8 {
+.VMhw8,
+._3_5OP,
+._1814Z._3Ku9S {
   background-color: var(--darkGray) !important;
 }
 
@@ -502,7 +504,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 [data-asset-chat-background-dark],
 ._3ob6,
 .cR0ai ._2Ye92,
-._3ob6- {
+._3ob6-,
+.B3rjP {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -1024,15 +1027,13 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
   fill: var(--darkerGray) !important;
 }
 
-span[title="typing…"],
-._2a1Yw
-
 /*========= group chat names =========*/
 /*========= group chat names =========*/
 
 
 ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g), ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) + span, span[title="typing…"],
-._2a1Yw, span._2NMQ2._1hI5g._1VzZY, .-TvKO {
+._2a1Yw, span._2NMQ2._1hI5g._1VzZY, .-TvKO,
+._1JCRe {
   color: var(--whitish) !important;
 }
 .zGvn8 span {

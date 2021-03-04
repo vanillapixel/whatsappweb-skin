@@ -800,7 +800,9 @@ a,
 .qpqWq,
 ._2wWFt,
 ._2kR4B,
-._24DMK {
+._24DMK,
+span[data-mention-jid],
+.matched-mention {
   color: var(--mainColor) !important;
 }
 

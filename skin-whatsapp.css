@@ -12,9 +12,10 @@
   --darkerGray: #1c1c1c;
   --darkGray: #222222;
   --blackRgb: 0,0,0;
-  --mainColor: #ff9c5b;
+  --mainColor: #fd5154;
   --whitish: #d5d5d5;
-  --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!";
+  /* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
+  --alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
   --alertMessageSize: 17x;
   --audio-progress-played-incoming: var(--mainColor) !important;
   --audio-progress-played-outgoing: var(--mainColor) !important;
@@ -101,16 +102,16 @@ progress[value]::-webkit-progress-value {
 /*========= alert message - maintenance =========*/
 /*========= alert message - maintenance =========*/
 
-.app-wrapper-web:after {
+#app:after {
   display: flex;
   display: none;
   color: var(--mainColor);
   content: var(--alertMessage);
   animation: alert 50s infinite linear;
   top: 0;
-  width: 130vw;
+  white-space: nowrap;
   font-size: var(--alertMessageSize);
-  padding: 2px 20px;
+  padding: 2px 50px;
   height: 55px;
   left: -210vw;
   position: fixed;
@@ -248,7 +249,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._2UaNq:hover:after,
 ._1WWP0,
 ._3Pwfx:hover:after,
-._3Pwfx._1GGbM:after {
+._3Pwfx._1GGbM:after,
+._2Z4DV:hover:after {
   border: none !important;
 }
 ._1wSzK {
@@ -256,6 +258,9 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 }
 ._3NteO {
   cursor: zoom-in;
+}
+div[aria-selected]:hover, div[aria-selected="true"] {
+  filter: contrast(1.1)
 }
 
 ._20WGU,
@@ -505,7 +510,9 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._3ob6,
 .cR0ai ._2Ye92,
 ._3ob6-,
-.B3rjP {
+.B3rjP,
+.TbtXF,
+._2GAT7 {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -548,7 +555,8 @@ html[dir="ltr"] ._1F9Ap,
 ._3guyl:not(.RXmft) svg path,
 ._24wtQ,
 ._1DB2K,
-._1JAUF._2x4bz ._2_1wd{
+._1JAUF._2x4bz ._2_1wd,
+._222Ot{
     /* fill: #828689 !important; */
   color: var(--superLightGray) !important;
 }
@@ -706,7 +714,8 @@ html[dir="ltr"] ._1F9Ap,
 .bT1qf._17oaQ,
 ._2OcmB,
 ._2oimd,
-._2kxXx {
+._2kxXx,
+._2EcSg {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -802,7 +811,8 @@ a,
 ._2kR4B,
 ._24DMK,
 span[data-mention-jid],
-.matched-mention {
+.matched-mention,
+.-TvKO {
   color: var(--mainColor) !important;
 }
 
@@ -1034,8 +1044,9 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 
 
 ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g), ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) + span, span[title="typing…"],
-._2a1Yw, span._2NMQ2._1hI5g._1VzZY, .-TvKO,
-._1JCRe {
+._2a1Yw, span._2NMQ2._1hI5g._1VzZY,
+._1JCRe,
+div[data-animate-modal-body] ._3xWLK .-TvKO {
   color: var(--whitish) !important;
 }
 .zGvn8 span {

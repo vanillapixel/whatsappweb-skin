@@ -29,6 +29,7 @@
   --audio-track-outgoing: var(--superLightGray) !important;
   --panel-background: var(--darkGray) !important;
   --panel-background-colored: var(--darkGray) !important;
+  --dropdown-background-hover: var(--darkGray) !important;
   --background-default: var(--darkGray) !important;
   --video-primary: var(--mainColor) !important;
   --cl-1: var(--mainColor) !important;
@@ -858,7 +859,8 @@ span[data-mention-jid],
 .zoWT4,
 ._23sAs._2ijNh,
 ._21nHd,
-._1zOyO{
+._1zOyO,
+._1i_wG {
   color: var(--mainColor) !important;
 }
 

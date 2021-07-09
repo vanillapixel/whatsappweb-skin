@@ -22,6 +22,8 @@
   --audio-progress-incoming: var(--mainColor) !important;
   --audio-progress-outgoing: var(--mainColor) !important;
   --menu-tabs-list-active: var(--mainColor) !important;
+  --intro-background: var(--darkerGray) !important;
+  --button-primary-background: var(--mainColor) !important;
   --active-tab-marker: var(--mainColor) !important;
   --audio-track-outgoing: var(--superLightGray) !important;
   --audio-track-outgoing: var(--superLightGray) !important;
@@ -412,7 +414,9 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._1814Z._3Ku9S,
 ._2nY6U,
 .nBIOd,
-.p3_M1 {
+.p3_M1,
+._2B4d4._1QH2G,
+.message-in ._2JUrU ._3OC33, .message-in ._2JUrU ._3Lby7 {
   background-color: var(--darkGray) !important;
 }
 
@@ -536,7 +540,9 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._3yKRR._3tcao,
 ._20c87,
 ._3yWey.XKmj6,
-._1HzbD{
+._1HzbD,
+._3J6wB,
+._1fqrG {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -851,7 +857,8 @@ span[data-mention-jid],
 .dJxPU,
 .zoWT4,
 ._23sAs._2ijNh,
-._21nHd {
+._21nHd,
+._1zOyO{
   color: var(--mainColor) !important;
 }
 
@@ -933,7 +940,8 @@ input[type="radio"]:checked,
 ._1io3J,
 ._38M1B,
 ._1xOYT:before,
-.UF5Li {
+.UF5Li,
+.zaKsw:after {
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: var(--whitish) !important;

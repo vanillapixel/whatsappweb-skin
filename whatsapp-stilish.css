@@ -1111,7 +1111,7 @@
 	.piNo6,
 	._38ck1[data-icon="status-dblcheck"] svg path,
 	._3fLTW span[data-icon="status-ptt"] svg path,
-	._3NIfV span svg path {
+	._3NIfV span[data-testid="status-dblcheck"] svg path {
 		opacity: 1 !important;
 	}
 	span[data-icon="ptt-out-blue"] svg path:first-child,

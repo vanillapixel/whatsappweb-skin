@@ -3,80 +3,82 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 /* ignore the error icon below if using the Stylish code editor*/
-:root .dark, :root {
-  --mainColor: /*[[mainColor]]*/;
-  
-  /* color-scheme */
-  --superLightGray: #9e9e9e;
-  --lightGray: rgb(85, 85, 85);
-  --darkerGray: #1c1c1c;
-  --darkGray: #222222;
-  --blackRgb: 0,0,0;
-  --mainColor: #f32d4b;
-  --whitish: #d5d5d5;
-  /* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
-  --alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
-  --alertMessageSize: 17x;
-  --active-tab-marker: var(--mainColor) !important;
-  --audio-progress-played-incoming: var(--mainColor) !important;
-  --audio-progress-played-outgoing: var(--mainColor) !important;
-  --audio-progress-incoming: var(--mainColor) !important;
-  --audio-progress-outgoing: var(--mainColor) !important;
-  --background-default: var(--darkGray) !important;
-  --button-primary-background: var(--mainColor) !important;
-  --intro-background: var(--darkerGray) !important;
-  --menu-tabs-list-active: var(--mainColor) !important;
-  --audio-track-outgoing: var(--superLightGray) !important;
-  --audio-track-outgoing: var(--superLightGray) !important;
-  --panel-background: var(--darkGray) !important;
-  --panel-background-colored: var(--darkGray) !important;
-  --dropdown-background-hover: var(--darkGray) !important;
-  --unread-marker-background: var(--mainColor) !important;
-  --video-primary: var(--mainColor) !important;
-  --cl-1: var(--mainColor) !important;
-  --cl-2: var(--mainColor) !important;
-  --cl-3: #B14AED;
-  --cl-4: #4474e4;
-  --cl-5: #34d3b3;
-  --cl-6: #2add7e;
-  --cl-7: #f5f12f;
-  --cl-8: #f69d37;
-  --cl-9: #f32d4b;
-  --cl-10: #e73287;
+:root .dark,
+:root {
+	--mainColor: /*[[mainColor]]*/ ;
+
+	/* color-scheme */
+	--superLightGray: #9e9e9e;
+	--lightGray: rgb(85, 85, 85);
+	--darkerGray: #1c1c1c;
+	--darkGray: #222222;
+	--blackRgb: 0, 0, 0;
+	--mainColor: #f32d4b;
+	--whitish: #d5d5d5;
+	/* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
+	--alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
+	--alertMessageSize: 17x;
+	--active-tab-marker: var(--mainColor) !important;
+	--audio-progress-played-incoming: var(--mainColor) !important;
+	--audio-progress-played-outgoing: var(--mainColor) !important;
+	--audio-progress-incoming: var(--mainColor) !important;
+	--audio-progress-outgoing: var(--mainColor) !important;
+	--background-default: var(--darkGray) !important;
+	--button-primary-background: var(--mainColor) !important;
+	--intro-background: var(--darkerGray) !important;
+	--menu-tabs-list-active: var(--mainColor) !important;
+	--audio-track-outgoing: var(--superLightGray) !important;
+	--audio-track-outgoing: var(--superLightGray) !important;
+	--panel-background: var(--darkGray) !important;
+	--panel-background-colored: var(--darkGray) !important;
+	--dropdown-background-hover: var(--darkGray) !important;
+	--unread-marker-background: var(--mainColor) !important;
+	--video-primary: var(--mainColor) !important;
+	--cl-1: var(--mainColor) !important;
+	--cl-2: var(--mainColor) !important;
+	--cl-3: #b14aed;
+	--cl-4: #4474e4;
+	--cl-5: #34d3b3;
+	--cl-6: #2add7e;
+	--cl-7: #f5f12f;
+	--cl-8: #f69d37;
+	--cl-9: #f32d4b;
+	--cl-10: #e73287;
 }
 
 /*========= mentioned name =========*/
 /*========= mentioned name =========*/
 
 ._1VzZY .matched-mention {
-  cursor: pointer;
-  color: var(--mainColor) !important;
+	cursor: pointer;
+	color: var(--mainColor) !important;
 }
 
 /*========= video player bar + thumb fix =========*/
 /*========= video player bar + thumb fix =========*/
 
-.piNo6, ._2KNOi, ._3DHGF {
-  z-index: 99999
+.piNo6,
+._2KNOi,
+._3DHGF {
+	z-index: 99999;
 }
 ._2KNOi {
-  left: -5px !important;
+	left: -5px !important;
 }
-
 
 *::-webkit-scrollbar-track,
 *::-webkit-slider-runnable-track {
-  background: var(--lightGray) !important;
+	background: var(--lightGray) !important;
 }
 
 body,
 span,
 header,
 div {
-  font-family: "Raleway", sans-serif !important;
+	font-family: "Raleway", sans-serif !important;
 }
 body {
-  background-image: -webkit-linear-gradient(top, black, black) !important;
+	background-image: -webkit-linear-gradient(top, black, black) !important;
 }
 /*======== overlay messages ======== */
 /*======== overlay messages ======== */
@@ -86,54 +88,59 @@ body {
 ._1lcup,
 ._39Lm1,
 ._1UyGr._18oGY {
-  background: linear-gradient(15deg,rgba(var(--lightGray),0),rgba(var(--lightGray),0) 45%,rgba(var(--lightGray),.12) 70%,rgba(var(--lightGray),.33)) !important;
+	background: linear-gradient(
+		15deg,
+		rgba(var(--lightGray), 0),
+		rgba(var(--lightGray), 0) 45%,
+		rgba(var(--lightGray), 0.12) 70%,
+		rgba(var(--lightGray), 0.33)
+	) !important;
 }
 [data-asset-intro-image-light],
 [data-asset-intro-image-dark] {
-  position: relative;
-  top: 100px;
-  background-image: url(http://i.imgur.com/Nzo0SUV.png);
-  border-radius: 0px !important;
-  filter: hue-rotate(-167deg);
-  transform: scale(0.5) !important;
+	position: relative;
+	top: 100px;
+	background-image: url(http://i.imgur.com/Nzo0SUV.png);
+	border-radius: 0px !important;
+	filter: hue-rotate(-167deg);
+	transform: scale(0.5) !important;
 }
 progress,
 a._3FXB1 {
-  color: var(--mainColor) !important;
+	color: var(--mainColor) !important;
 }
 
 input#input-chatlist-search {
-  background-color: var(--whitish) !important;
-  border-radius: 5px;
-  color: black;
+	background-color: var(--whitish) !important;
+	border-radius: 5px;
+	color: black;
 }
 progress[value]::-webkit-progress-value {
-  background-color: var(--mainColor) !important;
+	background-color: var(--mainColor) !important;
 }
-
 
 /*========= alert message - maintenance =========*/
 /*========= alert message - maintenance =========*/
 
 #app:after {
-  display: flex;
-  display: none;
-  color: var(--mainColor);
-  content: var(--alertMessage);
-  animation: alert 50s infinite linear;
-  top: 0;
-  white-space: nowrap;
-  font-size: var(--alertMessageSize);
-  padding: 2px 50px;
-  height: 55px;
-  left: -210vw;
-  position: fixed;
-  animation-iteration-count: 2;
-  z-index: 99999999999999999999999999;
-  background: var(--darkGray);
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	display: none;
+	color: var(--mainColor);
+	content: var(--alertMessage);
+	animation: alert 50s infinite linear;
+	top: 0;
+	white-space: nowrap;
+	font-size: var(--alertMessageSize);
+	padding: 2px 50px;
+	height: 55px;
+	left: -210vw;
+	position: fixed;
+	animation-iteration-count: 2;
+	z-index: 99999999999999999999999999;
+	background: var(--darkGray);
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 /*======== icons svg fill ========*/
@@ -218,7 +225,7 @@ g[clip-path="url(#document-SVGID_2_)"] path,
 g[clip-path="url(#contact-SVGID_2_)"] path,
 g[clip-path="url(#rooms-SVGID_2_)"] path,
 ._3xkAl svg path {
-  fill: var(--mainColor) !important;
+	fill: var(--mainColor) !important;
 }
 
 ._6vYCc,
@@ -227,7 +234,7 @@ g[clip-path="url(#rooms-SVGID_2_)"] path,
 ._34Zo9,
 .RXmfT svg path,
 ._3fnYk {
-  stroke: var(--mainColor) !important;
+	stroke: var(--mainColor) !important;
 }
 
 ._1jJLh span svg path,
@@ -237,22 +244,22 @@ span[data-icon="ptt-out-blue"] svg path:first-child,
 span[data-icon="ptt-in-blue"] svg path:first-child,
 span[data-icon="ptt-out-gray"] svg path:first-child,
 span[data-icon="ptt-in-gray"] svg path:first-child {
-  fill: var(--darkGray) !important;
+	fill: var(--darkGray) !important;
 }
 ._3hV1n span svg path,
 ._2m8GO span svg path:nth-child(2) {
-  fill: var(--whitish) !important;
+	fill: var(--whitish) !important;
 }
 .tail-container {
-  display: none;
+	display: none;
 }
 .app {
-  box-shadow: 0px 0px 2px 0px black !important;
+	box-shadow: 0px 0px 2px 0px black !important;
 }
 ._2EXPL:hover:after,
 ._2EXPL._3df_h:after,
 ._2EXPL._1f1zm:after {
-  border-top: 0px !important;
+	border-top: 0px !important;
 }
 ._1fkhx,
 ._3AwwN,
@@ -264,28 +271,29 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._3Pwfx:hover:after,
 ._3Pwfx._1GGbM:after,
 ._2Z4DV:hover:after {
-  border: none !important;
+	border: none !important;
 }
 ._1wSzK {
-  display: none;
+	display: none;
 }
 ._3NteO {
-  cursor: zoom-in;
+	cursor: zoom-in;
 }
-div[aria-selected]:hover, div[aria-selected="true"] {
-  filter: contrast(1.1)
+div[aria-selected]:hover,
+div[aria-selected="true"] {
+	filter: contrast(1.1);
 }
 
 ._20WGU,
 ._15CAo._3EQsG,
 ._1UyGr ._18oGY {
-  background: linear-gradient(
-    15deg,
-    transparent,
-    transparent 45%,
-    rgba(0, 0, 0, 0.12) 70%,
-    rgba(0, 0, 0, 0.33)
-  ) !important;
+	background: linear-gradient(
+		15deg,
+		transparent,
+		transparent 45%,
+		rgba(0, 0, 0, 0.12) 70%,
+		rgba(0, 0, 0, 0.33)
+	) !important;
 }
 
 /*======== dark background ========*/
@@ -401,10 +409,13 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._1R3Un,
 .SgIJV,
 ._1-qgF,
-._2oUye, ._2A8P4, .atk6d,
+._2oUye,
+._2A8P4,
+.atk6d,
 ._3JBJ3,
 .TbtXF,
-.message-out ._3XpKm, .message-in ._3XpKm,
+.message-out ._3XpKm,
+.message-in ._3XpKm,
 ._2kR4B,
 ._215cl,
 ._1IqI5,
@@ -418,10 +429,11 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 .nBIOd,
 .p3_M1,
 ._2B4d4._1QH2G,
-.message-in ._2JUrU ._3OC33, .message-in ._2JUrU ._3Lby7,
+.message-in ._2JUrU ._3OC33,
+.message-in ._2JUrU ._3Lby7,
 .a-HbF,
 ._3IBSU {
-  background-color: var(--darkGray) !important;
+	background-color: var(--darkGray) !important;
 }
 
 ._3pkkz,
@@ -510,7 +522,8 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._1HX2v,
 ._37bbf,
 .mBpSq,
-._1z6YY, ._1gal2,
+._1z6YY,
+._1gal2,
 ._1E4E4,
 ._2eUNe,
 .tSmQ1,
@@ -548,9 +561,9 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._3J6wB,
 ._1fqrG,
 ._1w-Ol {
-  border: none !important;
-  background: var(--darkerGray) !important;
-  color: var(--superLightGray) !important;
+	border: none !important;
+	background: var(--darkerGray) !important;
+	color: var(--superLightGray) !important;
 }
 
 /*======== light gray color ========*/
@@ -594,8 +607,8 @@ html[dir="ltr"] ._1F9Ap,
 ._222Ot,
 .cvjcv,
 ._2nY6U._2_TVt ._37FrU {
-    /* fill: #828689 !important; */
-  color: var(--superLightGray) !important;
+	/* fill: #828689 !important; */
+	color: var(--superLightGray) !important;
 }
 
 /*======== darker background + mainColor color ========*/
@@ -716,8 +729,8 @@ html[dir="ltr"] ._1F9Ap,
 ._27ApE,
 ._1wc4Q._3JHdl,
 ._17JJa,
-._2S-RK, 
-._3wdcN, 
+._2S-RK,
+._3wdcN,
 ._WnqL._3JHdl,
 ._3RFYA,
 ._3weD7,
@@ -764,8 +777,8 @@ html[dir="ltr"] ._1F9Ap,
 ._3cOAM,
 ._1IN0t,
 ._2gZCX._3tcao {
-  background-color: var(--darkerGray) !important;
-  color: var(--mainColor) !important;
+	background-color: var(--darkerGray) !important;
+	color: var(--mainColor) !important;
 }
 
 /*======== mainColor color property ONLY ========*/
@@ -829,7 +842,7 @@ header span._1wjpf._3NFp9._3FXB1,
 ._1fPA0,
 .IqPek,
 .gMRg5,
-._3ZYWe  ._1VzZY,
+._3ZYWe ._1VzZY,
 ._2a1zO,
 .CWVX1 ._1VzZY,
 .color-1 ._1VzZY,
@@ -848,8 +861,7 @@ a,
 ._2oUye,
 ._1Kn3o,
 .VtaVl,
-._2oUye ._2fGIm
-.qpqWq span,
+._2oUye ._2fGIm .qpqWq span,
 ._15smv,
 ._3k0dC._3Flx8,
 ._2xxet,
@@ -870,7 +882,7 @@ span[data-mention-jid],
 ._1i_wG,
 .DNiBl,
 ._1C3Ha {
-  color: var(--mainColor) !important;
+	color: var(--mainColor) !important;
 }
 
 /*======== lightGray color ========*/
@@ -881,7 +893,7 @@ span ._1wjpf,
 ._25Ooe,
 ._3FXB1,
 ._204wf {
-  color: var(--lightGray);
+	color: var(--lightGray);
 }
 
 /*======== lightGray color ========*/
@@ -898,7 +910,7 @@ span ._1wjpf,
 ._15aTv,
 ._3F6QL ._2S1VP,
 ._1582E {
-  color: gray !important;
+	color: gray !important;
 }
 
 /*======== mainColor background + var(--whitish) text ========*/
@@ -945,7 +957,8 @@ input[type="radio"]:checked,
 ._14wV4,
 *::-webkit-scrollbar-thumb,
 .dark .bg-color-2,
-.piNo6, ._2KNOi,
+.piNo6,
+._2KNOi,
 ._3xWLK,
 ._3OPbH,
 ._1io3J,
@@ -953,24 +966,24 @@ input[type="radio"]:checked,
 ._1xOYT:before,
 .UF5Li,
 .zaKsw:after,
-._23LrM{
-  background-color: var(--mainColor) !important;
-  border-color: var(--mainColor) !important;
-  color: var(--whitish) !important;
-  font-weight: 400;
+._23LrM {
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+	color: var(--whitish) !important;
+	font-weight: 400;
 }
 
 /*======== var(--whitish) background and border color ========*/
 /*======== var(--whitish) background and border color ========*/
 
 input[type="range"]::-webkit-slider-runnable-track {
-  background-color: var(--whitish) !important;
-  border-color: var(--whitish) !important;
+	background-color: var(--whitish) !important;
+	border-color: var(--whitish) !important;
 }
 
 ._1hDF,
 ._2IweK {
-  border-color: var(--whitish) !important;
+	border-color: var(--whitish) !important;
 }
 
 /*======== lighter gray hover background ========*/
@@ -986,11 +999,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 ._2S4cq,
 .H774S._3UHfW,
 ._9-YHG,
-._18oo2._19zgN
-.pXnLN,
+._18oo2._19zgN .pXnLN,
 ._3K-bg,
 ._165_h {
-  background-color: var(--darkGray) !important;
+	background-color: var(--darkGray) !important;
 }
 
 /*======== transparent background ========*/
@@ -1007,8 +1019,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 ._1RYPC,
 ._3I3b7,
 ._1ubAk {
-  background-color: transparent !important;
-  background: transparent !important;
+	background-color: transparent !important;
+	background: transparent !important;
 }
 
 /*======== transparent color ========*/
@@ -1016,7 +1028,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .message-in ._1JfxZ,
 .message-out ._1JfxZ {
-  color: transparent !important;
+	color: transparent !important;
 }
 
 /*======== darker gray color ========*/
@@ -1024,7 +1036,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 span[data-icon="tail-in"],
 span[data-icon="tail-out"] {
-  color: var(--darkerGray) !important;
+	color: var(--darkerGray) !important;
 }
 
 /*======== border color transparent ========*/
@@ -1033,12 +1045,12 @@ span[data-icon="tail-out"] {
 ._2kHpK,
 .eJ0yJ:after,
 ._1C6Zl,
-.DuUXI, 
+.DuUXI,
 ._2Evw0,
 .TbtXF,
 ._2A8P4,
 ._3OvU8 {
-  border-color: transparent !important;
+	border-color: transparent !important;
 }
 
 /*======== border color mainColor ========*/
@@ -1051,7 +1063,7 @@ span[data-icon="tail-out"] {
 ._2Gqfb .UQ0S6,
 ._2fOd_ ._3mpG7,
 ._2359L ._1paHP {
-  border-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
 }
 
 /*======== input background darkerGray, light border ========*/
@@ -1059,7 +1071,7 @@ span[data-icon="tail-out"] {
 
 .DuUXI,
 ._2Evw0 {
-  background-color: var(--darkerGray) !important;
+	background-color: var(--darkerGray) !important;
 }
 
 /*========= seen messages icons =========*/
@@ -1083,8 +1095,9 @@ span[aria-label=" Delivered "] svg path,
 ._376MY,
 span[data-icon="recalled"] svg path,
 span[data-icon="msg-time"] svg path,
-span[data-icon="status-ptt"] svg path {
-  opacity: 0.3 !important;
+span[data-icon="status-ptt"] svg path,
+._2qo4q svg path {
+	opacity: 0.3 !important;
 }
 ._2RFeE,
 ._3hyINm,
@@ -1098,149 +1111,314 @@ span[aria-label=" Read "] svg path,
 span[aria-label=" Read "] svg path,
 .piNo6,
 ._38ck1[data-icon="status-dblcheck"] svg path,
-._3fLTW span[data-icon="status-ptt"] svg path {
-  opacity: 1 !important;
+._3fLTW span[data-icon="status-ptt"] svg path,
+._3NIfV span svg path {
+	opacity: 1 !important;
 }
 span[data-icon="ptt-out-blue"] svg path:first-child,
 span[data-icon="ptt-in-blue"] svg path:first-child,
 span[data-icon="ptt-out-gray"] svg path:first-child,
 span[data-icon="ptt-in-gray"] svg path:first-child {
-  fill: var(--darkerGray) !important;
+	fill: var(--darkerGray) !important;
 }
 
 /*========= group chat names =========*/
 /*========= group chat names =========*/
 
-
-._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g), ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) + span, span[title="typing…"],
-._2a1Yw, span._2NMQ2._1hI5g._1VzZY,
+._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g),
+._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) + span,
+span[title="typing…"],
+._2a1Yw,
+span._2NMQ2._1hI5g._1VzZY,
 ._1JCRe,
 div[data-animate-modal-body] ._3xWLK .-TvKO,
 ._16h0X {
-  color: var(--whitish) !important;
+	color: var(--whitish) !important;
 }
 .zGvn8 span {
-  color: inherit !important;
+	color: inherit !important;
 }
 ._2KXjI:before {
-  content: "@ ";
-  margin-right: 5px;
+	content: "@ ";
+	margin-right: 5px;
 }
 ._1V82l path.primary {
-  fill: var(--whitish) !important;
+	fill: var(--whitish) !important;
 }
-.color-1 span, .color-1 ._1VzZY, .color-11 span, .color-11 ._1VzZY, .color-21 span, .color-21 ._1VzZY, .color-31 span, .color-31 ._1VzZY, .color-41 span, .color-41 ._1VzZY, .color-51 span, .color-51 ._1VzZY {
-  color: var(--cl-1) !important;
+.color-1 span,
+.color-1 ._1VzZY,
+.color-11 span,
+.color-11 ._1VzZY,
+.color-21 span,
+.color-21 ._1VzZY,
+.color-31 span,
+.color-31 ._1VzZY,
+.color-41 span,
+.color-41 ._1VzZY,
+.color-51 span,
+.color-51 ._1VzZY {
+	color: var(--cl-1) !important;
 }
-.dark .bg-color-1, .dark .bg-color-11, .dark .bg-color-21, .dark .bg-color-31, .dark .bg-color-41, .dark .bg-color-51 {
-  background-color: var(--cl-1) !important;
+.dark .bg-color-1,
+.dark .bg-color-11,
+.dark .bg-color-21,
+.dark .bg-color-31,
+.dark .bg-color-41,
+.dark .bg-color-51 {
+	background-color: var(--cl-1) !important;
 }
-.color-2 span, .color-2 ._1VzZY, .color-12 span, .color-12 ._1VzZY, .color-22 span, .color-22 ._1VzZY, .color-32 span, .color-32 ._1VzZY, .color-42 span, .color-42 ._1VzZY, .color-52 span, .color-52 ._1VzZY {
-  color: var(--cl-2) !important;
+.color-2 span,
+.color-2 ._1VzZY,
+.color-12 span,
+.color-12 ._1VzZY,
+.color-22 span,
+.color-22 ._1VzZY,
+.color-32 span,
+.color-32 ._1VzZY,
+.color-42 span,
+.color-42 ._1VzZY,
+.color-52 span,
+.color-52 ._1VzZY {
+	color: var(--cl-2) !important;
 }
-.dark .bg-color-2, .dark .bg-color-12, .dark .bg-color-22, .dark .bg-color-32, .dark .bg-color-42, .dark .bg-color-52 {
-  background-color: var(--cl-2) !important;
-      }
-.color-3 span, .color-3 ._1VzZY, .color-13 span, .color-13 ._1VzZY, .color-23 span, .color-23 ._1VzZY, .color-33 span, .color-33 ._1VzZY, .color-43 span, .color-43 ._1VzZY, .color-53 span, .color-53 ._1VzZY {
-  color: var(--cl-3) !important;
+.dark .bg-color-2,
+.dark .bg-color-12,
+.dark .bg-color-22,
+.dark .bg-color-32,
+.dark .bg-color-42,
+.dark .bg-color-52 {
+	background-color: var(--cl-2) !important;
 }
-.dark .bg-color-3, .dark .bg-color-13, .dark .bg-color-23, .dark .bg-color-33, .dark .bg-color-43, .dark .bg-color-53 {
-  background-color: var(--cl-3) !important;
-      }
-.color-4 span, .color-4 ._1VzZY, .color-14 span, .color-14 ._1VzZY, .color-24 span, .color-24 ._1VzZY, .color-34 span, .color-34 ._1VzZY, .color-44 span, .color-44 ._1VzZY, .color-54 span, .color-54 ._1VzZY {
-  color: var(--cl-4) !important;
+.color-3 span,
+.color-3 ._1VzZY,
+.color-13 span,
+.color-13 ._1VzZY,
+.color-23 span,
+.color-23 ._1VzZY,
+.color-33 span,
+.color-33 ._1VzZY,
+.color-43 span,
+.color-43 ._1VzZY,
+.color-53 span,
+.color-53 ._1VzZY {
+	color: var(--cl-3) !important;
 }
-.dark .bg-color-4, .dark .bg-color-14, .dark .bg-color-24, .dark .bg-color-34, .dark .bg-color-44, .dark .bg-color-54 {
-  background-color: var(--cl-4) !important;
-      }
-.color-5 span, .color-5 ._1VzZY, .color-15 span, .color-15 ._1VzZY, .color-25 span, .color-25 ._1VzZY, .color-35 span, .color-35 ._1VzZY, .color-45 span, .color-45 ._1VzZY, .color-55 span, .color-55 ._1VzZY {
-  color: var(--cl-5) !important;
+.dark .bg-color-3,
+.dark .bg-color-13,
+.dark .bg-color-23,
+.dark .bg-color-33,
+.dark .bg-color-43,
+.dark .bg-color-53 {
+	background-color: var(--cl-3) !important;
 }
-.dark .bg-color-5, .dark .bg-color-15, .dark .bg-color-25, .dark .bg-color-35, .dark .bg-color-45, .dark .bg-color-55 {
-  background-color: var(--cl-5) !important;
-      }
-.color-6 span, .color-6 ._1VzZY, .color-16 span, .color-16 ._1VzZY, .color-26 span, .color-26 ._1VzZY, .color-36 span, .color-36 ._1VzZY, .color-46 span, .color-46 ._1VzZY, .color-56 span, .color-56 ._1VzZY {
-  color: var(--cl-6) !important;
+.color-4 span,
+.color-4 ._1VzZY,
+.color-14 span,
+.color-14 ._1VzZY,
+.color-24 span,
+.color-24 ._1VzZY,
+.color-34 span,
+.color-34 ._1VzZY,
+.color-44 span,
+.color-44 ._1VzZY,
+.color-54 span,
+.color-54 ._1VzZY {
+	color: var(--cl-4) !important;
 }
-.dark .bg-color-6, .dark .bg-color-16, .dark .bg-color-26, .dark .bg-color-36, .dark .bg-color-46, .dark .bg-color-56 {
-  background-color: var(--cl-6) !important;
-      }
-.color-7 span, .color-7 ._1VzZY, .color-17 span, .color-17 ._1VzZY, .color-27 span, .color-27 ._1VzZY, .color-37 span, .color-37 ._1VzZY, .color-47 span, .color-47 ._1VzZY, .color-57 span, .color-57 ._1VzZY {
-  color: var(--cl-7) !important;
+.dark .bg-color-4,
+.dark .bg-color-14,
+.dark .bg-color-24,
+.dark .bg-color-34,
+.dark .bg-color-44,
+.dark .bg-color-54 {
+	background-color: var(--cl-4) !important;
 }
-.dark .bg-color-7, .dark .bg-color-17, .dark .bg-color-27, .dark .bg-color-37, .dark .bg-color-47, .dark .bg-color-57 {
-  background-color: var(--cl-7) !important;
-      }
-.color-8 span, .color-8 ._1VzZY, .color-18 span, .color-18 ._1VzZY, .color-28 span, .color-28 ._1VzZY, .color-38 span, .color-38 ._1VzZY, .color-48 span, .color-48 ._1VzZY, .color-58 span, .color-58 ._1VzZY {
-  color: var(--cl-8) !important;
+.color-5 span,
+.color-5 ._1VzZY,
+.color-15 span,
+.color-15 ._1VzZY,
+.color-25 span,
+.color-25 ._1VzZY,
+.color-35 span,
+.color-35 ._1VzZY,
+.color-45 span,
+.color-45 ._1VzZY,
+.color-55 span,
+.color-55 ._1VzZY {
+	color: var(--cl-5) !important;
 }
-.dark .bg-color-8, .dark .bg-color-18, .dark .bg-color-28, .dark .bg-color-38, .dark .bg-color-48, .dark .bg-color-58 {
-  background-color: var(--cl-8) !important;
-      }
-.color-9 span, .color-9 ._1VzZY, .color-19 span, .color-19 ._1VzZY, .color-29 span, .color-29 ._1VzZY, .color-39 span, .color-39 ._1VzZY, .color-49 span, .color-49 ._1VzZY, .color-59 span, .color-59 ._1VzZY {
-  color: var(--cl-9) !important;
+.dark .bg-color-5,
+.dark .bg-color-15,
+.dark .bg-color-25,
+.dark .bg-color-35,
+.dark .bg-color-45,
+.dark .bg-color-55 {
+	background-color: var(--cl-5) !important;
 }
-.dark .bg-color-9, .dark .bg-color-19, .dark .bg-color-29, .dark .bg-color-39, .dark .bg-color-49, .dark .bg-color-59 {
-  background-color: var(--cl-9) !important;
-      }
-.color-10 span, .color-10 ._1VzZY, .color-20 span, .color-20 ._1VzZY, .color-30 span, .color-30 ._1VzZY, .color-40 span, .color-40 ._1VzZY, .color-50 span, .color-50 ._1VzZY, .color-60 span, .color-60 ._1VzZY {
-  color: var(--cl-10) !important;
+.color-6 span,
+.color-6 ._1VzZY,
+.color-16 span,
+.color-16 ._1VzZY,
+.color-26 span,
+.color-26 ._1VzZY,
+.color-36 span,
+.color-36 ._1VzZY,
+.color-46 span,
+.color-46 ._1VzZY,
+.color-56 span,
+.color-56 ._1VzZY {
+	color: var(--cl-6) !important;
 }
-.dark .bg-color-10, .dark .bg-color-20, .dark .bg-color-30, .dark .bg-color-40, .dark .bg-color-50, .dark .bg-color-60 {
-  background-color: var(--cl-10) !important;
+.dark .bg-color-6,
+.dark .bg-color-16,
+.dark .bg-color-26,
+.dark .bg-color-36,
+.dark .bg-color-46,
+.dark .bg-color-56 {
+	background-color: var(--cl-6) !important;
+}
+.color-7 span,
+.color-7 ._1VzZY,
+.color-17 span,
+.color-17 ._1VzZY,
+.color-27 span,
+.color-27 ._1VzZY,
+.color-37 span,
+.color-37 ._1VzZY,
+.color-47 span,
+.color-47 ._1VzZY,
+.color-57 span,
+.color-57 ._1VzZY {
+	color: var(--cl-7) !important;
+}
+.dark .bg-color-7,
+.dark .bg-color-17,
+.dark .bg-color-27,
+.dark .bg-color-37,
+.dark .bg-color-47,
+.dark .bg-color-57 {
+	background-color: var(--cl-7) !important;
+}
+.color-8 span,
+.color-8 ._1VzZY,
+.color-18 span,
+.color-18 ._1VzZY,
+.color-28 span,
+.color-28 ._1VzZY,
+.color-38 span,
+.color-38 ._1VzZY,
+.color-48 span,
+.color-48 ._1VzZY,
+.color-58 span,
+.color-58 ._1VzZY {
+	color: var(--cl-8) !important;
+}
+.dark .bg-color-8,
+.dark .bg-color-18,
+.dark .bg-color-28,
+.dark .bg-color-38,
+.dark .bg-color-48,
+.dark .bg-color-58 {
+	background-color: var(--cl-8) !important;
+}
+.color-9 span,
+.color-9 ._1VzZY,
+.color-19 span,
+.color-19 ._1VzZY,
+.color-29 span,
+.color-29 ._1VzZY,
+.color-39 span,
+.color-39 ._1VzZY,
+.color-49 span,
+.color-49 ._1VzZY,
+.color-59 span,
+.color-59 ._1VzZY {
+	color: var(--cl-9) !important;
+}
+.dark .bg-color-9,
+.dark .bg-color-19,
+.dark .bg-color-29,
+.dark .bg-color-39,
+.dark .bg-color-49,
+.dark .bg-color-59 {
+	background-color: var(--cl-9) !important;
+}
+.color-10 span,
+.color-10 ._1VzZY,
+.color-20 span,
+.color-20 ._1VzZY,
+.color-30 span,
+.color-30 ._1VzZY,
+.color-40 span,
+.color-40 ._1VzZY,
+.color-50 span,
+.color-50 ._1VzZY,
+.color-60 span,
+.color-60 ._1VzZY {
+	color: var(--cl-10) !important;
+}
+.dark .bg-color-10,
+.dark .bg-color-20,
+.dark .bg-color-30,
+.dark .bg-color-40,
+.dark .bg-color-50,
+.dark .bg-color-60 {
+	background-color: var(--cl-10) !important;
 }
 
 ._1kdBg:after {
-  content: "Enjoy the darkness";
-  color: var(--mainColor) !important;
-  background-color: transparent !important;
-  left: 50% !important;
-  transform: translateX(-50%);
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  position: absolute;
-  font-size: 35px;
-  height: 35px;
-  font-weight: 800;
-  padding: 50px !important;
-  top: 20%;
-  border-top: none !important;
-  animation: 5.5s pulse infinite;
+	content: "Enjoy the darkness";
+	color: var(--mainColor) !important;
+	background-color: transparent !important;
+	left: 50% !important;
+	transform: translateX(-50%);
+	width: 50%;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	font-size: 35px;
+	height: 35px;
+	font-weight: 800;
+	padding: 50px !important;
+	top: 20%;
+	border-top: none !important;
+	animation: 5.5s pulse infinite;
 }
 
-.piNo6, ._2KNOi, input[type="range"] {
-  cursor: pointer;
+.piNo6,
+._2KNOi,
+input[type="range"] {
+	cursor: pointer;
 }
 .a-HbF {
-  padding: 0 !important
+	padding: 0 !important;
 }
 
 ._1u3M2:before {
-    content: "■ ■ ■" !important;
-    margin-right: 8px !important;
+	content: "■ ■ ■" !important;
+	margin-right: 8px !important;
 }
 
 ._1IN0t {
-  margin: 3px 0 3px 66px !important;
+	margin: 3px 0 3px 66px !important;
 }
 
 @keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0px var(--mainColor);
-    box-shadow: 0 0 0 0px var(--mainColor);
-  }
-  45% {
-    -webkit-box-shadow: 0 0 0 15px #ff613800;
-    box-shadow: 0 0 0 15px #ff613800;
-  }
+	0% {
+		-webkit-box-shadow: 0 0 0 0px var(--mainColor);
+		box-shadow: 0 0 0 0px var(--mainColor);
+	}
+	45% {
+		-webkit-box-shadow: 0 0 0 15px #ff613800;
+		box-shadow: 0 0 0 15px #ff613800;
+	}
 }
 
 @keyframes alert {
-  from {
-    left: 110%;
-  }
-  to {
-    left: -200%;
-  }
+	from {
+		left: 110%;
+	}
+	to {
+		left: -200%;
+	}
 }

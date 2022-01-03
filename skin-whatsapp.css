@@ -12,7 +12,11 @@
 	--lightGray: rgb(85, 85, 85);
 	--darkerGray: #1c1c1c;
 	--darkGray: #222222;
+	--darkestGray: #161616;
 	--blackRgb: 0, 0, 0;
+	--mainColor: /*[[mainColor]]*/ ;
+	--fontFamily: /*[[fontFamily]]*/ ;
+	--fontFamily: "Raleway";
 	--mainColor: #f32d4b;
 	--whitish: #d5d5d5;
 	/* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
@@ -44,6 +48,97 @@
 	--cl-8: #f69d37;
 	--cl-9: #f32d4b;
 	--cl-10: #e73287;
+
+	/* vanilla vars overwrite */
+
+	--button-alternative: var(--mainColor);
+	--incoming-background-deeper: var(--darkerGray);
+	--outgoing-background-deeper: var(--darkerGray);
+	--butterbar-connection-background: var(--darkestGray);
+	--butterbar-connection-primary: white;
+	--butterbar-connection-secondary: var(--superLightGray);
+	--panel-header-background: var(--darkestGray);
+}
+
+/*========= miscellanous =========*/
+/*========= miscellanous =========*/
+
+._3vPI2 {
+	flex-direction: column !important;
+	justify-content: flex-start !important;
+	align-items: flex-start !important;
+}
+._3vPI2 ._1i_wG {
+	margin: 0 !important;
+	color: white !important;
+	font-size: 11px !important;
+	margin: 2px 0 0 0 !important;
+}
+._2qo4q {
+	margin-right: 2px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	flex-direction: row;
+	display: flex;
+}
+._2qo4q:before {
+	content: "status: ";
+	font-size: 10px;
+	color: white;
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	margin-right: 5px;
+}
+
+header._1G3Wr,
+header._23P3O {
+	padding: 40px 30px !important;
+	background-color: var(--darkestGray) !important;
+}
+header._1G3Wr ._8hzr9,
+header._23P3O ._8hzr9 {
+	transform: scale(1.3) !important;
+}
+
+header ._2YnE3 {
+	padding-right: 30px !important;
+}
+header .lhj4utae {
+	font-size: 20px !important;
+}
+
+.EtBAv .i0jNr {
+	background: linear-gradient(145deg, #1e1e1e, #191919);
+	box-shadow: 7px 7px 14px #0e0e0e, -7px -7px 14px #2a2a2a;
+	padding: 10px;
+	top: 10px;
+	position: relative;
+	border-radius: 10px;
+}
+
+._3ojyC,
+._22Msk {
+	background: linear-gradient(145deg, #1e1e1e, #191919);
+	box-shadow: 2px 4px 20px #0b0b0b, -4px -2px 10px 0px #2d2d2d;
+	position: relative;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 14px !important;
+}
+
+.Nm1g1._22AX6 {
+	background-color: transparent !important;
+}
+#side .uwk68 {
+	padding: 20px;
+	background-color: unset !important;
+}
+
+._1Jn3C {
+	background: linear-gradient(145deg, #1e1e1e, #191919) !important;
+	box-shadow: 2px 4px 20px #0b0b0b, -8px -5px 16px #2d2d2d !important;
 }
 
 /*========= mentioned name =========*/
@@ -75,7 +170,7 @@ body,
 span,
 header,
 div {
-	font-family: "Raleway", sans-serif !important;
+	font-family: var(--fontFamily) !important;
 }
 body {
 	background-image: -webkit-linear-gradient(top, black, black) !important;
@@ -119,6 +214,11 @@ progress[value]::-webkit-progress-value {
 	background-color: var(--mainColor) !important;
 }
 
+._8hzr9 {
+	border-radius: 10px !important;
+	transform: scale(0.8);
+}
+
 /*========= alert message - maintenance =========*/
 /*========= alert message - maintenance =========*/
 
@@ -147,78 +247,7 @@ progress[value]::-webkit-progress-value {
 /*======== icons svg fill ========*/
 
 div[role="button"] svg path,
-span[data-icon="status-dblcheck"] svg path,
-span[data-icon="chevron-right-alt"] svg path,
-span[data-icon="checkbox-round-unchecked"] svg path,
-span[data-icon="checkbox-round-checked"] svg path:nth-child(1),
-span[data-icon="round-x-inv"] svg path,
-span[data-icon="round-send-inv"] svg path,
-span[data-icon="round-x-inv"] svg path,
-span[data-icon="send"] svg path,
-span[data-icon="smiley"] svg path,
-span[data-icon="emoji-input"] svg path,
-span[data-icon="back"] svg path,
-span[data-icon="delete"] svg path,
-span[data-icon="download"] svg path,
-span[data-icon="forward"] svg path,
-span[data-icon="forward-chat"] svg path,
-span[data-icon="highly-forwarded"] svg path,
-span[data-icon="live-location-android"] svg path,
-span[data-icon="new-group"] svg path,
-span[data-icon="video-pip-large"] svg path,
-span[data-icon="media-download"] svg path,
-span[data-icon="recalled"] svg path,
-span[data-icon="refresh"] svg path,
-span[data-icon="round-send-inv"] svg path,
-span[data-icon="star"] svg path,
-span[data-icon="star-btn"] svg path,
-span[data-icon="status-check"] svg path,
-span[data-icon="status-audio"] svg path,
-span[data-icon="status-ptt"] svg path,
-span[data-icon="status-ptt-blue"] svg path,
-span[data-icon="status-ptt-gray"] svg path,
-span[data-icon="status-ptt-green"] svg path,
-span[data-icon="status-sticker"] svg path,
-span[data-icon="status-document"] svg path,
-span[data-icon="status-time"] svg path,
-span[data-icon="status-gif"] svg path,
-span[data-icon="status-vcard"] svg path,
-span[data-icon="recalled-in"] svg path,
-span[data-icon="video-pip"] svg path,
-span[data-icon="video-pause"] svg path,
-span[data-icon="video-play"] svg path,
-span[data-icon="video-volume-1"] svg path,
-span[data-icon="video-volume-2"] svg path,
-span[data-icon="video-volume-3"] svg path,
-span[data-icon="video-volume-muted"] svg path,
-span[data-icon="msg-video-light"] svg path,
-span[data-icon="msg-video"] svg path,
-span[data-icon="recalled-out"] svg path,
-span[data-icon="ptt-status"] svg path,
-span[data-icon="ptt-out-blue"] svg path,
-span[data-icon="ptt-in-blue"] svg path,
-span[data-icon="ptt-out-gray"] svg path,
-span[data-icon="ptt-in-gray"] svg path,
-span[data-icon="ptt"] svg path,
-span[data-icon="forwarded"] svg path,
-span[data-icon="recalled-in"] svg path,
-span[data-icon="back-light"] svg path,
-span[data-icon="audio-play"] svg path,
-span[data-icon="audio-pause"] svg path,
-span[data-icon="audio-download"] svg path,
-span[data-icon="media-play"] svg path,
-span[data-icon="back-blue"] svg path,
-span[data-icon="muted"] svg path,
-span[data-icon="search"] svg path,
-span[data-icon="default-group"] svg path:first-child,
-span[data-icon="default-user"] svg path:first-child,
-span[data-icon="x"] svg path,
-span[data-icon="x-alt"] svg path,
-span[data-icon="down"] svg path,
-span[data-icon="down-context"] svg path,
-span[data-icon="status-image"] svg path,
-span[data-icon="status-video"] svg path,
-span[data-icon="laptop"] svg path,
+[data-icon] svg path,
 g[clip-path="url(#image-SVGID_2_)"] path,
 g[clip-path="url(#camera-SVGID_2_)"] path,
 g[clip-path="url(#document-SVGID_2_)"] path,
@@ -226,6 +255,40 @@ g[clip-path="url(#contact-SVGID_2_)"] path,
 g[clip-path="url(#rooms-SVGID_2_)"] path,
 ._3xkAl svg path {
 	fill: var(--mainColor) !important;
+}
+
+[data-icon="tail-out"] svg path,
+[data-icon="tail-in"] svg path,
+[data-icon="checkbox-round-checked"] svg path:nth-child(1),
+[data-icon="default-user"] svg path:nth-child(2),
+[data-icon="default-group"] svg path:nth-child(2),
+[data-icon="default-user"] svg path:nth-child(1),
+[data-icon="alert-phone"] svg path:nth-child(1),
+[data-icon="default-user"] svg path:nth-child(1),
+[data-icon="default-group"] svg path:nth-child(1) {
+	fill: transparent !important;
+}
+
+[data-icon="default-user"] svg path:nth-child(2),
+[data-icon="new-group"] svg path:nth-child(1),
+[data-icon="default-group"] svg path:nth-child(2) {
+	fill: transparent !important;
+	stroke: var(--mainColor) !important;
+	stroke-width: 7px !important;
+}
+
+[data-icon="default-user"] svg path:nth-child(2) {
+	stroke-width: 12px !important;
+}
+
+[data-icon="new-group"] svg path:nth-child(1),
+[data-icon="alert-battery"] svg path {
+	fill: transparent !important;
+	stroke: var(--mainColor) !important;
+	stroke-width: 2px !important;
+}
+[data-icon="default-user"] {
+	transform: scale(0.6) !important;
 }
 
 ._6vYCc,
@@ -270,7 +333,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._1WWP0,
 ._3Pwfx:hover:after,
 ._3Pwfx._1GGbM:after,
-._2Z4DV:hover:after {
+._2Z4DV:hover:after,
+._3yWey {
 	border: none !important;
 }
 ._1wSzK {
@@ -368,8 +432,6 @@ div[aria-selected="true"] {
 ._3Pwfx,
 ._22PcK,
 ._2O84H,
-.message-in .Nm1g1,
-.message-out .Nm1g1,
 .wPm43,
 .tnocY,
 .KpuSa,
@@ -414,8 +476,6 @@ div[aria-selected="true"] {
 .atk6d,
 ._3JBJ3,
 .TbtXF,
-.message-out ._3XpKm,
-.message-in ._3XpKm,
 ._2kR4B,
 ._215cl,
 ._1IqI5,
@@ -432,7 +492,8 @@ div[aria-selected="true"] {
 .message-in ._2JUrU ._3OC33,
 .message-in ._2JUrU ._3Lby7,
 .a-HbF,
-._3IBSU {
+._3IBSU,
+._1sNMG {
 	background-color: var(--darkGray) !important;
 }
 
@@ -560,7 +621,8 @@ div[aria-selected="true"] {
 ._1HzbD,
 ._3J6wB,
 ._1fqrG,
-._1w-Ol {
+._1w-Ol,
+.sIvFa.CHSLU {
 	border: none !important;
 	background: var(--darkerGray) !important;
 	color: var(--superLightGray) !important;
@@ -881,7 +943,8 @@ span[data-mention-jid],
 ._1zOyO,
 ._1i_wG,
 .DNiBl,
-._1C3Ha {
+._1C3Ha,
+._3jR9Y {
 	color: var(--mainColor) !important;
 }
 
@@ -966,7 +1029,8 @@ input[type="radio"]:checked,
 ._1xOYT:before,
 .UF5Li,
 .zaKsw:after,
-._23LrM {
+._23LrM,
+.br6oik82 {
 	background-color: var(--mainColor) !important;
 	border-color: var(--mainColor) !important;
 	color: var(--whitish) !important;
@@ -1018,7 +1082,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 ._2vsnU *,
 ._1RYPC,
 ._3I3b7,
-._1ubAk {
+._1ubAk,
+._23QTJ {
 	background-color: transparent !important;
 	background: transparent !important;
 }
@@ -1062,7 +1127,8 @@ span[data-icon="tail-out"] {
 ._2zkCi:after,
 ._2Gqfb .UQ0S6,
 ._2fOd_ ._3mpG7,
-._2359L ._1paHP {
+._2359L ._1paHP,
+.diqd3znl {
 	border-color: var(--mainColor) !important;
 }
 

@@ -19,8 +19,13 @@
 	--mainColor: #f32d4b;
 	--fontFamily: "Raleway";
 	--whitish: #d5d5d5;
+	--neumorph-cl-1: #0b0b0b;
+	--neumorph-cl-2: #2d2d2d;
 	--neumorph-bg: linear-gradient(145deg, #1e1e1e, #191919) !important;
-	--neumorph-bs: 2px 4px 20px #0b0b0b, -3px -3px 10px #2d2d2d !important;
+	--neumorph-bs: -3px -3px 10px var(--neumorph-cl-1),
+		3px 3px 10px var(--neumorph-cl-2) !important;
+	--neumorph-bs-focused: -3px -3px 10px var(--neumorph-cl-1),
+		3px 3px 10px var(--neumorph-cl-2), inset 0px 0px 2px 2px var(--mainColor) !important;
 	/* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
 	--alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
 	--alertMessageSize: 17x;
@@ -60,6 +65,7 @@
 	--butterbar-connection-primary: white;
 	--butterbar-connection-secondary: var(--superLightGray);
 	--panel-header-background: var(--darkestGray);
+	--system-message-background: transparent;
 }
 
 /*========= miscellanous =========*/
@@ -67,7 +73,8 @@
 
 ._1XkO3,
 ._1lPgH,
-.p3_M1 {
+.p3_M1,
+.etp_f {
 	background: var(--neumorph-bg) !important;
 	box-shadow: var(--neumorph-bs) !important;
 	border-radius: 20px !important;
@@ -120,22 +127,24 @@ header .lhj4utae {
 	font-size: 19px !important;
 }
 
-.EtBAv .i0jNr {
+.EtBAv .i0jNr,
+._3cOAM {
 	background: var(--neumorph-bg);
 	box-shadow: var(--neumorph-bs);
 	padding: 10px;
-	top: 10px;
+	top: 0px;
 	position: relative;
 	border-radius: 10px;
+	color: var(--mainColor);
 }
 
-._3ojyC,
+._3EZ_R,
 ._22Msk {
 	background: var(--neumorph-bg);
 	box-shadow: var(--neumorph-bs);
 	position: relative;
 	margin: 5px;
-	padding: 5px !important;
+	padding: 9px !important;
 	border-radius: 10px;
 }
 
@@ -150,7 +159,8 @@ header .lhj4utae {
 }
 
 .Nm1g1._22AX6,
-._1XkO3 {
+._1XkO3,
+._3yWey.XKmj6 {
 	background-color: transparent !important;
 }
 .zoWT4 {
@@ -160,6 +170,11 @@ header .lhj4utae {
 .WYyr1 {
 	margin-top: 10px !important;
 	margin-left: 2px !important;
+}
+
+.Nm1g1 span.i0jNr {
+	box-shadow: none !important;
+	background: transparent !important;
 }
 
 /*========= new messages notifications =========*/
@@ -186,6 +201,12 @@ header .lhj4utae {
 
 span[title="typing…"] {
 	color: unset !important;
+}
+
+.etp_f:focus-within,
+._1Jn3C:focus-within,
+.p3_M1:focus-within {
+	box-shadow: var(--neumorph-bs-focused) !important;
 }
 
 /*========= mentioned name =========*/
@@ -665,7 +686,6 @@ div[aria-selected="true"] {
 ._2BU3P,
 ._3yKRR._3tcao,
 ._20c87,
-._3yWey.XKmj6,
 ._1HzbD,
 ._3J6wB,
 ._1fqrG,
@@ -723,7 +743,7 @@ html[dir="ltr"] ._1F9Ap,
 
 /*======== darker background + mainColor color ========*/
 /*======== darker background + mainColor color ========*/
-
+._3cOAM,
 ._1qi0v,
 ._2Qffr,
 ._1Vw8y,
@@ -1184,7 +1204,8 @@ span[data-icon="tail-out"] {
 /*======== input background darkerGray, light border ========*/
 
 .DuUXI,
-._2Evw0 {
+._2Evw0,
+._3XUNQ {
 	background-color: var(--darkerGray) !important;
 }
 

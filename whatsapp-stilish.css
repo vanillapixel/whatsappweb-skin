@@ -12,6 +12,7 @@
 		--darkestGray: #161616;
 		--blackRgb: 0, 0, 0;
 		--mainColor: #f32d4b;
+		--fontFamily: "Raleway";
 		--mainColor: /*[[mainColor]]*/ ;
 		--fontFamily: /*[[fontFamily]]*/ ;
 		--whitish: #d5d5d5;
@@ -93,16 +94,17 @@
 		padding: 40px 30px !important;
 		background-color: var(--darkestGray) !important;
 	}
-	header._1G3Wr ._8hzr9,
-	header._23P3O ._8hzr9 {
+	header._1G3Wr ._3GlyB,
+	header ._2YnE3 {
 		transform: scale(1.3) !important;
 	}
 
 	header ._2YnE3 {
-		padding-right: 30px !important;
+		padding-right: 20px !important;
+		margin-left: 20px !important;
 	}
 	header .lhj4utae {
-		font-size: 20px !important;
+		font-size: 19px !important;
 	}
 
 	.EtBAv .i0jNr {
@@ -135,6 +137,10 @@
 	._1Jn3C {
 		background: linear-gradient(145deg, #1e1e1e, #191919) !important;
 		box-shadow: 2px 4px 20px #0b0b0b, -8px -5px 16px #2d2d2d !important;
+	}
+
+	.zoWT4 {
+		font-size: 15px;
 	}
 
 	/*========= mentioned name =========*/

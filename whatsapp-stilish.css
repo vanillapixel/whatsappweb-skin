@@ -16,6 +16,8 @@
 		--mainColor: /*[[mainColor]]*/ ;
 		--fontFamily: /*[[fontFamily]]*/ ;
 		--whitish: #d5d5d5;
+		--neumorph-bg: linear-gradient(145deg, #1e1e1e, #191919) !important;
+		--neumorph-bs: 2px 4px 20px #0b0b0b, -3px -3px 10px #2d2d2d !important;
 		/* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
 		--alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
 		--alertMessageSize: 17x;
@@ -59,6 +61,14 @@
 
 	/*========= miscellanous =========*/
 	/*========= miscellanous =========*/
+
+	._1XkO3,
+	._1lPgH,
+	.p3_M1 {
+		background: var(--neumorph-bg) !important;
+		box-shadow: var(--neumorph-bs) !important;
+		border-radius: 20px !important;
+	}
 
 	._3vPI2 {
 		flex-direction: column !important;
@@ -108,8 +118,8 @@
 	}
 
 	.EtBAv .i0jNr {
-		background: linear-gradient(145deg, #1e1e1e, #191919);
-		box-shadow: 7px 7px 14px #0e0e0e, -7px -7px 14px #2a2a2a;
+		background: var(--neumorph-bg);
+		box-shadow: var(--neumorph-bs);
 		padding: 10px;
 		top: 10px;
 		position: relative;
@@ -118,29 +128,61 @@
 
 	._3ojyC,
 	._22Msk {
-		background: linear-gradient(145deg, #1e1e1e, #191919);
-		box-shadow: 2px 4px 20px #0b0b0b, -4px -2px 10px 0px #2d2d2d;
+		background: var(--neumorph-bg);
+		box-shadow: var(--neumorph-bs);
 		position: relative;
-		margin: 10px;
+		margin: 5px;
+		padding: 5px !important;
 		border-radius: 10px;
-		padding: 14px !important;
 	}
 
-	.Nm1g1._22AX6 {
-		background-color: transparent !important;
-	}
 	#side .uwk68 {
 		padding: 20px;
-		background-color: unset !important;
+		background-color: #1d2326 !important;
 	}
 
 	._1Jn3C {
-		background: linear-gradient(145deg, #1e1e1e, #191919) !important;
-		box-shadow: 2px 4px 20px #0b0b0b, -8px -5px 16px #2d2d2d !important;
+		background: var(--neumorph-bg);
+		box-shadow: var(--neumorph-bs);
 	}
 
+	.Nm1g1._22AX6,
+	._1XkO3 {
+		background-color: transparent !important;
+	}
 	.zoWT4 {
 		font-size: 15px;
+	}
+
+	.WYyr1 {
+		margin-top: 10px !important;
+		margin-left: 2px !important;
+	}
+
+	/*========= new messages notifications =========*/
+	/*========= new messages notifications =========*/
+
+	.ovhn1urg {
+		background-color: var(--mainColor);
+		border-radius: 5px !important;
+		padding: 5px !important;
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		font-weight: 100 !important;
+	}
+
+	._2nY6U {
+		position: relative !important;
+	}
+
+	._1pJ9J {
+		transform: none !important;
+	}
+
+	span[title="typing…"] {
+		color: unset !important;
 	}
 
 	/*========= mentioned name =========*/
@@ -336,7 +378,8 @@
 	._3Pwfx:hover:after,
 	._3Pwfx._1GGbM:after,
 	._2Z4DV:hover:after,
-	._3yWey {
+	._3yWey,
+	.p3_M1 {
 		border: none !important;
 	}
 	._1wSzK {

@@ -13,7 +13,7 @@
 	--darkerGray: #1c1c1c;
 	--darkGray: #222222;
 	--darkestGray: #161616;
-	--blackRgb: 0, 0, 0;
+	--colorTonedGray: #1d2326;
 	--mainColor: /*[[mainColor]]*/ ;
 	--fontFamily: /*[[fontFamily]]*/ ;
 	--mainColor: #f32d4b;
@@ -29,6 +29,19 @@
 	/* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
 	--alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
 	--alertMessageSize: 17x;
+
+	--cl-1: var(--mainColor) !important;
+	--cl-2: var(--mainColor) !important;
+	--cl-3: #b14aed;
+	--cl-4: #4474e4;
+	--cl-5: #34d3b3;
+	--cl-6: #2add7e;
+	--cl-7: #f5f12f;
+	--cl-8: #f69d37;
+	--cl-9: #f32d4b;
+	--cl-10: #e73287;
+
+	/* vanilla vars overwrite */
 	--active-tab-marker: var(--mainColor) !important;
 	--audio-progress-played-incoming: var(--mainColor) !important;
 	--audio-progress-played-outgoing: var(--mainColor) !important;
@@ -45,19 +58,6 @@
 	--dropdown-background-hover: var(--darkGray) !important;
 	--unread-marker-background: var(--mainColor) !important;
 	--video-primary: var(--mainColor) !important;
-	--cl-1: var(--mainColor) !important;
-	--cl-2: var(--mainColor) !important;
-	--cl-3: #b14aed;
-	--cl-4: #4474e4;
-	--cl-5: #34d3b3;
-	--cl-6: #2add7e;
-	--cl-7: #f5f12f;
-	--cl-8: #f69d37;
-	--cl-9: #f32d4b;
-	--cl-10: #e73287;
-
-	/* vanilla vars overwrite */
-
 	--button-alternative: var(--mainColor);
 	--incoming-background-deeper: var(--darkerGray);
 	--outgoing-background-deeper: var(--darkerGray);
@@ -66,6 +66,12 @@
 	--butterbar-connection-secondary: var(--superLightGray);
 	--panel-header-background: var(--darkestGray);
 	--system-message-background: transparent;
+	--button-primary-background-hover: var(--colorTonedGray);
+	--panel-background-deeper: var(--darkerGray);
+	--button-alternative: var(--mainColor);
+	--switch-button-checked-color: var(--mainColor);
+	--switch-track-checked-color: var(--lightGray);
+	--video-primary: var(--mainColor);
 }
 
 /*========= miscellanous =========*/
@@ -141,16 +147,10 @@ header .lhj4utae {
 ._3EZ_R,
 ._22Msk {
 	background: var(--neumorph-bg);
-	box-shadow: var(--neumorph-bs);
 	position: relative;
 	margin: 5px;
 	padding: 9px !important;
 	border-radius: 10px;
-}
-
-#side .uwk68 {
-	padding: 20px;
-	background-color: #1d2326 !important;
 }
 
 ._1Jn3C {
@@ -217,6 +217,14 @@ span[title="typing…"] {
 	color: var(--mainColor) !important;
 }
 
+/*========= bold text =========*/
+/*========= bold text =========*/
+
+.edeob0r2, .EtBAv .i0jNr {
+	font-weight: 800;
+}
+
+
 /*========= video player bar + thumb fix =========*/
 /*========= video player bar + thumb fix =========*/
 
@@ -242,6 +250,10 @@ div {
 }
 body {
 	background-image: -webkit-linear-gradient(top, black, black) !important;
+}
+
+::placeholder {
+	color: var(--lightGray);
 }
 /*======== overlay messages ======== */
 /*======== overlay messages ======== */
@@ -1137,6 +1149,16 @@ input[type="range"]::-webkit-slider-runnable-track {
 	background-color: var(--darkGray) !important;
 }
 
+/*======== lighter gray hover background ========*/
+/*======== lighter gray hover background ========*/
+
+._2BU3P,
+#side .uwk68,
+._2mQtw {
+	background: #1d2326 !important;
+	padding: 20px !important;
+}
+
 /*======== transparent background ========*/
 /*======== transparent background ========*/
 
@@ -1196,7 +1218,8 @@ span[data-icon="tail-out"] {
 ._2Gqfb .UQ0S6,
 ._2fOd_ ._3mpG7,
 ._2359L ._1paHP,
-.diqd3znl {
+.diqd3znl,
+._2AkjL._31gut {
 	border-color: var(--mainColor) !important;
 }
 
@@ -1520,6 +1543,17 @@ div[data-animate-modal-body] ._3xWLK .-TvKO,
 	animation: 5.5s pulse infinite;
 }
 
+._3BMKG {
+	left: -4px !important;
+	z-index: 9999;
+}
+
+._2Zdgs:hover,
+.pNwLD:hover {
+	color: white;
+	box-shadow: var(--neumorph-bs-focused) !important;
+}
+
 .piNo6,
 ._2KNOi,
 input[type="range"] {
@@ -1527,6 +1561,10 @@ input[type="range"] {
 }
 .a-HbF {
 	padding: 0 !important;
+}
+
+._3ojyC ._2Lwe3 {
+	padding: 10px 0 !important;
 }
 
 ._1u3M2:before {

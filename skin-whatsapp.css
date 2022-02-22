@@ -5,23 +5,29 @@
 /* ignore the error icon below if using the Stylish code editor*/
 :root .dark,
 :root {
-	--mainColor: /*[[mainColor]]*/ ;
-
 	/* color-scheme */
 	--superLightGray: #9e9e9e;
 	--lightGray: rgb(85, 85, 85);
-	--darkerGray: #1c1c1c;
 	--darkGray: #222222;
+	--darkerGray: #1c1c1c;
 	--darkestGray: #161616;
 	--colorTonedGray: #1d2326;
 	--mainColor: /*[[mainColor]]*/ ;
 	--fontFamily: /*[[fontFamily]]*/ ;
-	--mainColor: #f32d4b;
+
+	/* start comment this block on the stylish version */
+	--mainColor: #ff9e70;
 	--fontFamily: "Raleway";
+	/* end comment this block on the stylish version */
+
 	--whitish: #d5d5d5;
 	--neumorph-cl-1: #0b0b0b;
 	--neumorph-cl-2: #2d2d2d;
-	--neumorph-bg: linear-gradient(145deg, #1e1e1e, #191919) !important;
+	--neumorph-bg: linear-gradient(
+		145deg,
+		var(--colorTonedGray),
+		var(--darkGray)
+	) !important;
 	--neumorph-bs: -3px -3px 10px var(--neumorph-cl-1),
 		3px 3px 10px var(--neumorph-cl-2) !important;
 	--neumorph-bs-focused: -3px -3px 10px var(--neumorph-cl-1),
@@ -31,14 +37,14 @@
 	--alertMessageSize: 17x;
 
 	--cl-1: var(--mainColor) !important;
-	--cl-2: var(--mainColor) !important;
+	--cl-2: #f32d4b;
 	--cl-3: #b14aed;
 	--cl-4: #4474e4;
 	--cl-5: #34d3b3;
 	--cl-6: #2add7e;
 	--cl-7: #f5f12f;
 	--cl-8: #f69d37;
-	--cl-9: #f32d4b;
+	--cl-9: #ff70bf;
 	--cl-10: #e73287;
 
 	/* vanilla vars overwrite */
@@ -72,6 +78,9 @@
 	--switch-button-checked-color: var(--mainColor);
 	--switch-track-checked-color: var(--lightGray);
 	--video-primary: var(--mainColor);
+	--rich-text-panel-background: var(--darkGray);
+	--mention-at-symbol: var(--mainColor);
+	--search-input-container-background: transparent;
 }
 
 /*========= miscellanous =========*/
@@ -136,7 +145,6 @@ header .lhj4utae {
 .EtBAv .i0jNr,
 ._3cOAM {
 	background: var(--neumorph-bg);
-	box-shadow: var(--neumorph-bs);
 	padding: 10px;
 	top: 0px;
 	position: relative;
@@ -145,12 +153,13 @@ header .lhj4utae {
 }
 
 ._3EZ_R,
-._22Msk {
+._22Msk,
+._1VmmK {
 	background: var(--neumorph-bg);
 	position: relative;
-	margin: 5px;
 	padding: 9px !important;
 	border-radius: 10px;
+	border: 0px !important;
 }
 
 ._1Jn3C {
@@ -205,14 +214,17 @@ span[title="typing…"] {
 
 .etp_f:focus-within,
 ._1Jn3C:focus-within,
-.p3_M1:focus-within {
+.p3_M1:focus-within,
+._1VmmK:focus-within {
 	box-shadow: var(--neumorph-bs-focused) !important;
 }
 
 /*========= mentioned name =========*/
 /*========= mentioned name =========*/
 
-._1VzZY .matched-mention {
+._1VzZY .matched-mention,
+._12x9I,
+._3m_Xw:hover {
 	cursor: pointer;
 	color: var(--mainColor) !important;
 }
@@ -220,17 +232,18 @@ span[title="typing…"] {
 /*========= bold text =========*/
 /*========= bold text =========*/
 
-.edeob0r2, .EtBAv .i0jNr {
+.edeob0r2,
+.EtBAv .i0jNr {
 	font-weight: 800;
 }
-
 
 /*========= video player bar + thumb fix =========*/
 /*========= video player bar + thumb fix =========*/
 
 .piNo6,
 ._2KNOi,
-._3DHGF {
+._3DHGF,
+._1doUo {
 	z-index: 99999;
 }
 ._2KNOi {
@@ -295,8 +308,8 @@ progress[value]::-webkit-progress-value {
 }
 
 ._8hzr9 {
-	border-radius: 10px !important;
-	transform: scale(0.8);
+	border-radius: 15px !important;
+	transform: scale(0.7);
 }
 
 /*========= alert message - maintenance =========*/
@@ -1155,7 +1168,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 ._2BU3P,
 #side .uwk68,
 ._2mQtw {
-	background: #1d2326 !important;
+	background: var(--colorTonedGray) !important;
 	padding: 20px !important;
 }
 
@@ -1571,9 +1584,15 @@ input[type="range"] {
 	content: "■ ■ ■" !important;
 	margin-right: 8px !important;
 }
+.at-symbol {
+	margin-right: 5px !important;
+}
 
 ._1IN0t {
 	margin: 3px 0 3px 66px !important;
+}
+.a-HbF {
+	padding: 5px 0 !important;
 }
 
 @keyframes pulse {

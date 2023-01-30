@@ -28,13 +28,18 @@
 		var(--colorTonedGray),
 		var(--darkGray)
 	) !important;
+	--neumorph-bg-inverted: linear-gradient(
+		325deg,
+		var(--colorTonedGray),
+		var(--darkGray)
+	) !important;
 	--neumorph-bs: -3px -3px 10px var(--neumorph-cl-1),
 		3px 3px 10px var(--neumorph-cl-2) !important;
 	--neumorph-bs-focused: -3px -3px 10px var(--neumorph-cl-1),
 		3px 3px 10px var(--neumorph-cl-2), inset 0px 0px 2px 2px var(--mainColor) !important;
 	/* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
 	--alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
-	--alertMessageSize: 17x;
+	--alertMessageSize: 17px;
 
 	--cl-1: var(--mainColor) !important;
 	--cl-2: #f32d4b;
@@ -46,6 +51,18 @@
 	--cl-8: #f69d37;
 	--cl-9: #ff70bf;
 	--cl-10: #e73287;
+
+	/* --colorTonedGray: #143031;
+    --mainColor: #bfffc7;
+
+    --colorTonedGray: #1c2e4c;
+    --mainColor: #6cd0ff;
+
+    --colorTonedGray: #1c0125;
+    --mainColor: #db6be2;
+
+    --colorTonedGray: #31020d;
+    --mainColor: #ff5450; */
 
 	/* vanilla vars overwrite */
 	--active-tab-marker: var(--mainColor) !important;
@@ -81,6 +98,16 @@
 	--rich-text-panel-background: var(--darkGray);
 	--mention-at-symbol: var(--mainColor);
 	--search-input-container-background: transparent;
+	--button-secondary: var(--mainColor) !important;
+	--icon-high-emphasis: var(--darkerGray);
+	--link: var(--mainColor) !important;
+	--unread-timestamp: var(--mainColor) !important;
+	--primary-strong: var(--mainColor);
+	--compose-input-background: var(--darkerGray) !important;
+	--compose-input-border: var(--darkerGray) !important;
+	--dropdown-background: var(--darkerGray) !important;
+	--drawer-section-background: var(--darkerGray) !important;
+	--drawer-background: var(--darkerGray) !important;
 }
 
 /*========= miscellanous =========*/
@@ -93,6 +120,43 @@
 	background: var(--neumorph-bg) !important;
 	box-shadow: var(--neumorph-bs) !important;
 	border-radius: 20px !important;
+}
+._3Uu1_ {
+	padding: 0;
+}
+.c3x5l3r8 {
+	left: 0.5ch;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	left: 10px;
+}
+.y_sn4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: baseline;
+	gap: 5px;
+}
+.y_sn4 * {
+	margin: 0 !important;
+}
+
+._2gzeB {
+	background-color: var(--darkestGray) !important;
+}
+._2T2Kt.vBu41 {
+	background: radial-gradient(
+		at top right,
+		rgba(var(--incoming-background-rgb), 1) 60%,
+		rgba(var(--incoming-background-rgb), 0) 80%
+	) !important;
+}
+span.l7jjieqr.fewfhwl7 {
+	color: #606060 !important;
+}
+._1beEj {
+	margin: 0 !important;
 }
 
 ._3vPI2 {
@@ -123,6 +187,33 @@
 	flex-direction: row;
 	margin-right: 5px;
 }
+.y_sn4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: baseline;
+	gap: 5px;
+}
+.y_sn4 * {
+	margin: 0 !important;
+}
+
+._2gzeB {
+	background-color: var(--darkestGray) !important;
+}
+._2T2Kt.vBu41 {
+	background: radial-gradient(
+		at top right,
+		rgba(var(--incoming-background-rgb), 1) 60%,
+		rgba(var(--incoming-background-rgb), 0) 80%
+	) !important;
+}
+span.l7jjieqr.fewfhwl7 {
+	color: #606060 !important;
+}
+._1beEj {
+	margin: 0 !important;
+}
 
 header._1G3Wr,
 header._23P3O {
@@ -143,23 +234,34 @@ header .lhj4utae {
 }
 
 .EtBAv .i0jNr,
-._3cOAM {
-	background: var(--neumorph-bg);
+._3cOAM,
+._1-lf9.NQl4z {
 	padding: 10px;
 	top: 0px;
 	position: relative;
 	border-radius: 10px;
 	color: var(--mainColor);
 }
+.V-zSs {
+	padding: 20px 9% !important;
+}
+
+.GAiYx {
+	margin-bottom: 12px !important;
+}
 
 ._3EZ_R,
-._22Msk,
-._1VmmK {
+._1VmmK,
+.message-out .ItfyB,
+.message-in .ItfyB {
 	background: var(--neumorph-bg);
 	position: relative;
 	padding: 9px !important;
 	border-radius: 10px;
 	border: 0px !important;
+}
+.message-out .ItfyB {
+	background: var(--neumorph-bg-inverted);
 }
 
 ._1Jn3C {
@@ -176,6 +278,13 @@ header .lhj4utae {
 	font-size: 15px;
 }
 
+._22Msk {
+	background-color: transparent !important;
+}
+._2Fo6S {
+	margin-bottom: 15px !important;
+}
+
 .WYyr1 {
 	margin-top: 10px !important;
 	margin-left: 2px !important;
@@ -184,6 +293,16 @@ header .lhj4utae {
 .Nm1g1 span.i0jNr {
 	box-shadow: none !important;
 	background: transparent !important;
+}
+.bfbxj8tr {
+	bottom: 10px;
+	right: -12px;
+}
+._16kef.dKzIw {
+	background: transparent !important;
+}
+header .lhj4utae {
+	font-size: 15px !important;
 }
 
 /*========= new messages notifications =========*/
@@ -195,9 +314,18 @@ header .lhj4utae {
 	padding: 5px !important;
 	display: block;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 5px;
+	left: 5px;
 	font-weight: 100 !important;
+}
+.Hy9nV {
+	color: var(--whitish);
+}
+.Dvjym {
+	color: var(--lightGray) !important;
+}
+._1jLYl {
+	border-radius: 10px;
 }
 
 ._2nY6U {
@@ -309,7 +437,7 @@ progress[value]::-webkit-progress-value {
 
 ._8hzr9 {
 	border-radius: 15px !important;
-	transform: scale(0.7);
+	transform: scale(0.85);
 }
 
 /*========= alert message - maintenance =========*/
@@ -328,7 +456,7 @@ progress[value]::-webkit-progress-value {
 	height: 55px;
 	left: -210vw;
 	position: fixed;
-	animation-iteration-count: 2;
+	animation-iteration-count: 1;
 	z-index: 99999999999999999999999999;
 	background: var(--darkGray);
 	text-align: center;
@@ -352,6 +480,7 @@ g[clip-path="url(#rooms-SVGID_2_)"] path,
 
 [data-icon="tail-out"] svg path,
 [data-icon="tail-in"] svg path,
+[data-icon="audio-file"] svg path:nth-child(1),
 [data-icon="checkbox-round-checked"] svg path:nth-child(1),
 [data-icon="default-user"] svg path:nth-child(2),
 [data-icon="default-group"] svg path:nth-child(2),
@@ -382,6 +511,9 @@ g[clip-path="url(#rooms-SVGID_2_)"] path,
 }
 [data-icon="default-user"] {
 	transform: scale(0.6) !important;
+}
+[data-icon="ptt-file"] svg path:first-child {
+	fill: transparent !important;
 }
 
 ._6vYCc,
@@ -452,6 +584,23 @@ div[aria-selected="true"] {
 		rgba(0, 0, 0, 0.12) 70%,
 		rgba(0, 0, 0, 0.33)
 	) !important;
+}
+
+._3ojyC ._3IkMh {
+	right: 21px !important;
+	bottom: 6px !important;
+}
+
+.ajgl1lbb:after {
+	content: attr(aria-valuetext);
+	position: absolute;
+	bottom: -20px;
+	font-size: 11px;
+	right: 0px;
+	opacity: 0.6;
+}
+.p357zi0d.bmot90v7 .ajgl1lbb:after {
+	display: none;
 }
 
 /*======== dark background ========*/
@@ -587,7 +736,8 @@ div[aria-selected="true"] {
 .message-in ._2JUrU ._3Lby7,
 .a-HbF,
 ._3IBSU,
-._1sNMG {
+._1sNMG,
+._1-lf9.NQl4z {
 	background-color: var(--darkGray) !important;
 }
 
@@ -931,7 +1081,9 @@ html[dir="ltr"] ._1F9Ap,
 ._2t-e4,
 ._3cOAM,
 ._1IN0t,
-._2gZCX._3tcao {
+._2gZCX._3tcao,
+._2jRew,
+.iWqod._1MZM5 {
 	background-color: var(--darkerGray) !important;
 	color: var(--mainColor) !important;
 }
@@ -1186,7 +1338,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 ._1RYPC,
 ._3I3b7,
 ._1ubAk,
-._23QTJ {
+._23QTJ,
+.cvjcv.EtBAv {
 	background-color: transparent !important;
 	background: transparent !important;
 }

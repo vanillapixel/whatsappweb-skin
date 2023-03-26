@@ -70,6 +70,8 @@
 		--audio-progress-incoming: var(--mainColor) !important;
 		--audio-progress-outgoing: var(--mainColor) !important;
 		--background-default: var(--darkGray) !important;
+		--background-default-active: var(--darkGray) !important;
+		--background-default-hover: var(--darkGray) !important;
 		--button-primary-background: var(--mainColor) !important;
 		--intro-background: var(--darkerGray) !important;
 		--menu-tabs-list-active: var(--mainColor) !important;
@@ -100,6 +102,7 @@
 		--button-secondary: var(--mainColor) !important;
 		--icon-high-emphasis: var(--darkerGray);
 		--link: var(--mainColor) !important;
+		--teal: var(--mainColor) !important;
 		--unread-timestamp: var(--mainColor) !important;
 		--primary-strong: var(--mainColor);
 		--compose-input-background: var(--darkerGray) !important;
@@ -107,6 +110,17 @@
 		--dropdown-background: var(--darkerGray) !important;
 		--drawer-section-background: var(--darkerGray) !important;
 		--drawer-background: var(--darkerGray) !important;
+		--app-background-stripe: var(--darkerGray) !important;
+		--modal-backdrop: var(--darkerGray) !important;
+		--button-secondary-border: var(--darkerGray) !important;
+		--border-list: transparent;
+		--button-secondary-border: var(--darkerGray) !important;
+		--search-container-background: var(--darkerGray);
+		--border-stronger: var(--darkerGray);
+		--search-input-background: var(--darkGray);
+		--message-primary: var(--whitish);
+		--link-preview: rgba(233, 237, 239, 0.87);
+		--link-preview-light: rgba(233, 237, 239, 0.3);
 	}
 
 	/*========= miscellanous =========*/

@@ -3,36 +3,37 @@
   :root {
     /* color-scheme */
     --superLightGray: #9e9e9e;
-    --lightGray: rgb(85, 85, 85);
-    --darkGray: #222222;
-    --darkerGray: #1c1c1c;
-    --darkestGray: #161616;
-    --colorTonedGray: #1d2326;
-    --mainColor: /*[[mainColor]]*/ ;
-    --fontFamily: /*[[fontFamily]]*/ ;
+    --theme-color-gray-500: rgb(85, 85, 85);
+    --theme-color-gray-700: #222222;
+    --theme-color-gray-800: #1c1c1c;
+    --theme-color-gray-900: #161616;
+    --theme-color-gray-toned: #1d2326;
+    --theme-color-primary: /*[[mainColor]]*/ ;
+    --theme-font-primary: /*[[fontFamily]]*/ ;
 
-    --whitish: #d5d5d5;
-    --neumorph-cl-1: #0b0b0b;
-    --neumorph-cl-2: #2d2d2d;
+    --theme-color-white-700: #d5d5d5;
+    --theme-color-neumorph-1: #0b0b0b;
+    --theme-color-neumorph-2: #2d2d2d;
     --neumorph-bg: linear-gradient(
       145deg,
-      var(--colorTonedGray),
-      var(--darkGray)
+      var(--theme-color-gray-toned),
+      var(--theme-color-gray-700)
     ) !important;
     --neumorph-bg-inverted: linear-gradient(
       325deg,
-      var(--colorTonedGray),
-      var(--darkGray)
+      var(--theme-color-gray-toned),
+      var(--theme-color-gray-700)
     ) !important;
-    --neumorph-bs: -3px -3px 10px var(--neumorph-cl-1),
-      3px 3px 10px var(--neumorph-cl-2) !important;
-    --neumorph-bs-focused: -3px -3px 10px var(--neumorph-cl-1),
-      3px 3px 10px var(--neumorph-cl-2), inset 0px 0px 2px 2px var(--mainColor) !important;
+    --neumorph-bs: -3px -3px 10px var(--theme-color-neumorph-1),
+      3px 3px 10px var(--theme-color-neumorph-2) !important;
+    --neumorph-bs-focused: -3px -3px 10px var(--theme-color-neumorph-1),
+      3px 3px 10px var(--theme-color-neumorph-2),
+      inset 0px 0px 2px 2px var(--theme-color-primary) !important;
     /* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
     --alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
     --alertMessageSize: 17px;
 
-    --active-tab-marker: #00a884;
+    --active-tab-marker: var(--theme-color-primary);
     --active-tab-marker-rgb: 0, 168, 132;
     --app-background: #111b21;
     --app-background-rgb: 17, 27, 33;
@@ -142,7 +143,7 @@
     --text-secondary-emphasized-rgb: 174, 186, 193;
     --text-secondary: #8696a0;
     --text-secondary-rgb: 134, 150, 160;
-    --text-teal: #00a884;
+    --text-teal: var(--theme-color-primary);
     --text-teal-rgb: 0, 168, 132;
     --text-success: #71eb85;
     --text-success-rgb: 113, 235, 133;
@@ -218,13 +219,13 @@
     --butterbar-fatal-icon-rgb: 255, 188, 56;
     --butterbar-notice-background: #182229;
     --butterbar-notice-background-rgb: 24, 34, 41;
-    --butterbar-notice-circle: #00a884;
+    --butterbar-notice-circle: var(--theme-color-primary);
     --butterbar-notice-circle-rgb: 0, 168, 132;
     --butterbar-notice-icon: #182229;
     --butterbar-notice-icon-rgb: 24, 34, 41;
     --butterbar-notice-smb-background: #182229;
     --butterbar-notice-smb-background-rgb: 24, 34, 41;
-    --butterbar-notice-smb-circle: #00a884;
+    --butterbar-notice-smb-circle: var(--theme-color-primary);
     --butterbar-notice-smb-circle-rgb: 0, 168, 132;
     --butterbar-notice-smb-icon: #182229;
     --butterbar-notice-smb-icon-rgb: 24, 34, 41;
@@ -232,7 +233,7 @@
     --butterbar-notification-icon-rgb: 83, 189, 235;
     --butterbar-update-background: #182229;
     --butterbar-update-background-rgb: 24, 34, 41;
-    --butterbar-update-icon: #00a884;
+    --butterbar-update-icon: var(--theme-color-primary);
     --butterbar-update-icon-rgb: 0, 168, 132;
     --butterbar-green-nux-primary: #e9edef;
     --butterbar-green-nux-primary-rgb: 233, 237, 239;
@@ -242,7 +243,7 @@
     --butterbar-green-nux-background-rgb: 24, 34, 41;
     --butterbar-green-nux-icon: #182229;
     --butterbar-green-nux-icon-rgb: 24, 34, 41;
-    --butterbar-green-nux-icon-background: #00a884;
+    --butterbar-green-nux-icon-background: var(--theme-color-primary);
     --butterbar-green-nux-icon-background-rgb: 0, 168, 132;
     --butterbar-green-nux-icon-dismiss: #8696a0;
     --butterbar-green-nux-icon-dismiss-rgb: 134, 150, 160;
@@ -266,7 +267,7 @@
     --butterbar-ad-action-info-background-rgb: 24, 34, 41;
     --butterbar-ad-action-info-icon: #182229;
     --butterbar-ad-action-info-icon-rgb: 24, 34, 41;
-    --butterbar-ad-action-info-icon-background: #00a884;
+    --butterbar-ad-action-info-icon-background: var(--theme-color-primary);
     --butterbar-ad-action-info-icon-background-rgb: 0, 168, 132;
     --butterbar-ad-action-info-icon-dismiss: #fff;
     --butterbar-ad-action-info-icon-dismiss-rgb: 255, 255, 255;
@@ -304,19 +305,19 @@
     --button-plain-disabled-background-rgb: 255, 255, 255;
     --button-primary: #111b21;
     --button-primary-rgb: 17, 27, 33;
-    --button-primary-background: #00a884;
+    --button-primary-background: var(--theme-color-primary);
     --button-primary-background-rgb: 0, 168, 132;
     --button-primary-background-hover: #06cf9c;
     --button-primary-background-hover-rgb: 6, 207, 156;
-    --button-round-background: #00a884;
+    --button-round-background: var(--theme-color-primary);
     --button-round-background-rgb: 0, 168, 132;
     --button-round-background-inverted: #2a3942;
     --button-round-background-inverted-rgb: 42, 57, 66;
-    --button-round-icon-inverted: #00a884;
+    --button-round-icon-inverted: var(--theme-color-primary);
     --button-round-icon-inverted-rgb: 0, 168, 132;
     --button-disabled: hsla(0, 0%, 100%, 0.4);
     --button-disabled-rgb: 255, 255, 255;
-    --button-secondary: #00a884;
+    --button-secondary: var(--theme-color-primary);
     --button-secondary-rgb: 0, 168, 132;
     --button-secondary-border: rgba(134, 150, 160, 0.15);
     --button-secondary-border-rgb: 134, 150, 160;
@@ -330,7 +331,7 @@
     --button-secondary-disabled-background-rgb: 255, 255, 255;
     --button-focus: #3b4a54;
     --button-focus-rgb: 59, 74, 84;
-    --button-focus-outline: #00a884;
+    --button-focus-outline: var(--theme-color-primary);
     --button-focus-outline-rgb: 0, 168, 132;
     --button-primary-destructive-color: #111b21;
     --button-primary-destructive-color-rgb: 17, 27, 33;
@@ -350,7 +351,7 @@
     --button-secondary-destructive-outline-rgb: 250, 160, 170;
     --button-secondary-destructive-spinner-color: #f15c6d;
     --button-secondary-destructive-spinner-color-rgb: 241, 92, 109;
-    --button-approve: #00a884;
+    --button-approve: var(--theme-color-primary);
     --button-approve-rgb: 0, 168, 132;
     --button-approve-background: #0a332c;
     --button-approve-background-rgb: 10, 51, 44;
@@ -390,7 +391,7 @@
     --chat-meta-rgb: 134, 150, 160;
     --chatlist-icon: #8696a0;
     --chatlist-icon-rgb: 134, 150, 160;
-    --checkbox-background: #00a884;
+    --checkbox-background: var(--theme-color-primary);
     --checkbox-background-rgb: 0, 168, 132;
     --checkbox-mark: #111b21;
     --checkbox-mark-rgb: 17, 27, 33;
@@ -454,11 +455,11 @@
     --empty-state-icon-rgb: 114, 122, 126;
     --ephemeral-nux-background: rgba(6, 207, 156, 0.15);
     --ephemeral-nux-background-rgb: 6, 207, 156;
-    --ephemeral-nux-bubble: #00a884;
+    --ephemeral-nux-bubble: var(--theme-color-primary);
     --ephemeral-nux-bubble-rgb: 0, 168, 132;
-    --ephemeral-nux-timer: #00a884;
+    --ephemeral-nux-timer: var(--theme-color-primary);
     --ephemeral-nux-timer-rgb: 0, 168, 132;
-    --sender-superpower-title: #00a884;
+    --sender-superpower-title: var(--theme-color-primary);
     --sender-superpower-title-rgb: 0, 168, 132;
     --filters-container-background: #111b21;
     --filters-container-background-rgb: 17, 27, 33;
@@ -478,7 +479,7 @@
     --focus-lighter-rgb: 83, 189, 235;
     --forwarded-indicator-text: hsla(0, 0%, 100%, 0.6);
     --forwarded-indicator-text-rgb: 255, 255, 255;
-    --highlight: #00a884;
+    --highlight: var(--theme-color-primary);
     --highlight-rgb: 0, 168, 132;
     --icon: #8696a0;
     --icon-rgb: 134, 150, 160;
@@ -490,17 +491,17 @@
     --icon-fixed-rgb: 134, 150, 160;
     --icon-lighter: #8696a0;
     --icon-lighter-rgb: 134, 150, 160;
-    --icon-search-back: #00a884;
+    --icon-search-back: var(--theme-color-primary);
     --icon-search-back-rgb: 0, 168, 132;
     --icon-strong: #aebac1;
     --icon-strong-rgb: 174, 186, 193;
-    --icon-bright-accent: #00a884;
+    --icon-bright-accent: var(--theme-color-primary);
     --icon-bright-accent-rgb: 0, 168, 132;
-    --icon-bright-highlight: #00a884;
+    --icon-bright-highlight: var(--theme-color-primary);
     --icon-bright-highlight-rgb: 0, 168, 132;
     --icon-pinned: #8696a0;
     --icon-pinned-rgb: 134, 150, 160;
-    --round-icon-background: #00a884;
+    --round-icon-background: var(--theme-color-primary);
     --round-icon-background-rgb: 0, 168, 132;
     --incoming-background: #202c33;
     --incoming-background-rgb: 32, 44, 51;
@@ -510,17 +511,17 @@
     --incoming-background-highlight-rgb: 4, 6, 7;
     --incoming-primary: #798287;
     --incoming-primary-rgb: 121, 130, 135;
-    --input-border-active: #00a884;
+    --input-border-active: var(--theme-color-primary);
     --input-border-active-rgb: 0, 168, 132;
     --input-border: #8696a0;
     --input-border-rgb: 134, 150, 160;
     --input-hover-background: #202c33;
     --input-hover-background-rgb: 32, 44, 51;
-    --input-empty-value-placeholder: #00a884;
+    --input-empty-value-placeholder: var(--theme-color-primary);
     --input-empty-value-placeholder-rgb: 0, 168, 132;
     --input-placeholder: #8696a0;
     --input-placeholder-rgb: 134, 150, 160;
-    --input-button-more: #00a884;
+    --input-button-more: var(--theme-color-primary);
     --input-button-more-rgb: 0, 168, 132;
     --intro-background: #222e35;
     --intro-background-rgb: 34, 46, 53;
@@ -580,7 +581,7 @@
     --media-editor-icon-secondary-color-rgb: 134, 150, 160;
     --media-editor-thumb-border: rgba(241, 241, 242, 0.1);
     --media-editor-thumb-border-rgb: 241, 241, 242;
-    --media-editor-thumb-border-active: #00a884;
+    --media-editor-thumb-border-active: var(--theme-color-primary);
     --media-editor-thumb-border-active-rgb: 0, 168, 132;
     --media-gallery-thumb-background: #2a3942;
     --media-gallery-thumb-background-rgb: 42, 57, 66;
@@ -602,7 +603,7 @@
     --menu-context-transparent-icon-rgb: 233, 237, 239;
     --menu-context-transparent-icon-inverse: rgba(32, 44, 51, 0.5);
     --menu-context-transparent-icon-inverse-rgb: 32, 44, 51;
-    --menu-tabs-list-active: #00a884;
+    --menu-tabs-list-active: var(--theme-color-primary);
     --menu-tabs-list-active-rgb: 0, 168, 132;
     --message-background-deep: rgba(11, 20, 26, 0.35);
     --message-background-deep-rgb: 11, 20, 26;
@@ -774,7 +775,7 @@
     --ptt-draft-button-stop-rgb: 255, 59, 48;
     --ptt-draft-button-stop-hover: #ff4e44;
     --ptt-draft-button-stop-hover-rgb: 255, 78, 68;
-    --ptt-draft-button-send: #00a884;
+    --ptt-draft-button-send: var(--theme-color-primary);
     --ptt-draft-button-send-rgb: 0, 168, 132;
     --ptt-draft-button-send-hover: #06cf9c;
     --ptt-draft-button-send-hover-rgb: 6, 207, 156;
@@ -864,7 +865,7 @@
     --shadow-light-rgb: 11, 20, 26;
     --spinner-default: #667781;
     --spinner-default-rgb: 102, 119, 129;
-    --spinner-highlight: #00a884;
+    --spinner-highlight: var(--theme-color-primary);
     --spinner-highlight-rgb: 0, 168, 132;
     --spinner-incoming: #5c666b;
     --spinner-incoming-rgb: 92, 102, 107;
@@ -904,13 +905,13 @@
     --system-message-background-rgb: 24, 34, 41;
     --system-message-text: #8696a0;
     --system-message-text-rgb: 134, 150, 160;
-    --teal-hover: #00a884;
+    --teal-hover: var(--theme-color-primary);
     --teal-hover-rgb: 0, 168, 132;
     --teal-pale: #60c6b1;
     --teal-pale-rgb: 96, 198, 177;
-    --text-action: #00a884;
+    --text-action: var(--theme-color-primary);
     --text-action-rgb: 0, 168, 132;
-    --text-action-link: #00a884;
+    --text-action-link: var(--theme-color-primary);
     --text-action-link-rgb: 0, 168, 132;
     --text-muted: #8696a0;
     --text-muted-rgb: 134, 150, 160;
@@ -924,17 +925,17 @@
     --tooltip-text-rgb: 11, 20, 26;
     --tooltip-background: #fff;
     --tooltip-background-rgb: 255, 255, 255;
-    --typing: #00a884;
+    --typing: var(--theme-color-whitish);
     --typing-rgb: 0, 168, 132;
-    --draft-label: #00a884;
+    --draft-label: var(--theme-color-primary);
     --draft-label-rgb: 0, 168, 132;
     --unread-background: #182229;
     --unread-background-rgb: 24, 34, 41;
     --unread-bar-background: rgba(11, 20, 26, 0.6);
     --unread-bar-background-rgb: 11, 20, 26;
-    --unread-timestamp: #00a884;
+    --unread-timestamp: var(--theme-color-primary);
     --unread-timestamp-rgb: 0, 168, 132;
-    --unread-marker-background: #00a884;
+    --unread-marker-background: var(--theme-color-primary);
     --unread-marker-background-rgb: 0, 168, 132;
     --unread-marker-text: #111b21;
     --unread-marker-text-rgb: 17, 27, 33;
@@ -1006,7 +1007,7 @@
     --text-medium-emphasis-rgb: 134, 150, 160;
     --icon-medium-emphasis: #8696a0;
     --icon-medium-emphasis-rgb: 134, 150, 160;
-    --icon-high-emphasis: #00a884;
+    --icon-high-emphasis: var(--theme-color-primary);
     --icon-high-emphasis-rgb: 0, 168, 132;
     --switch-button-color: #83929d;
     --switch-button-color-rgb: 131, 146, 157;
@@ -1019,7 +1020,7 @@
     --announcement-speaker-background: #046a62;
     --announcement-speaker-background-rgb: 4, 106, 98;
 
-    --cl-1: var(--mainColor) !important;
+    --cl-1: var(--theme-color-primary) !important;
     --cl-2: #f32d4b;
     --cl-3: #b14aed;
     --cl-4: #4474e4;
@@ -1030,83 +1031,93 @@
     --cl-9: #ff70bf;
     --cl-10: #e73287;
 
-    /* --colorTonedGray: #143031;
-    --mainColor: #bfffc7;
+    /* --theme-color-gray-toned: #143031;
+    --theme-color-primary: #bfffc7;
 
-    --colorTonedGray: #1c2e4c;
-    --mainColor: #6cd0ff;
+    --theme-color-gray-toned: #1c2e4c;
+    --theme-color-primary: #6cd0ff;
 
-    --colorTonedGray: #1c0125;
-    --mainColor: #db6be2;
+    --theme-color-gray-toned: #1c0125;
+    --theme-color-primary: #db6be2;
 
-    --colorTonedGray: #31020d;
-    --mainColor: #ff5450; */
+    --theme-color-gray-toned: #31020d;
+    --theme-color-primary: #ff5450; */
 
     /* vanilla vars overwrite */
-    --active-tab-marker: var(--mainColor) !important;
-    --audio-progress-played-incoming: var(--mainColor) !important;
-    --audio-progress-played-outgoing: var(--mainColor) !important;
-    --audio-progress-incoming: var(--mainColor) !important;
-    --audio-progress-outgoing: var(--mainColor) !important;
-    --background-default: var(--darkGray) !important;
-    --background-default-active: var(--darkGray) !important;
-    --background-default-hover: var(--darkGray) !important;
-    --button-primary-background: var(--mainColor) !important;
-    --intro-background: var(--darkerGray) !important;
-    --menu-tabs-list-active: var(--mainColor) !important;
+    --active-tab-marker: var(--theme-color-primary) !important;
+    --audio-progress-played-incoming: var(--theme-color-primary) !important;
+    --audio-progress-played-outgoing: var(--theme-color-primary) !important;
+    --audio-progress-incoming: var(--theme-color-primary) !important;
+    --audio-progress-outgoing: var(--theme-color-primary) !important;
+    --background-default: var(--theme-color-gray-700) !important;
+    --background-default-active: var(--theme-color-gray-700) !important;
+    --background-default-hover: var(--theme-color-gray-700) !important;
+    --button-primary-background: var(--theme-color-primary) !important;
+    --intro-background: var(--theme-color-gray-800) !important;
+    --menu-tabs-list-active: var(--theme-color-primary) !important;
     --audio-track-outgoing: var(--superLightGray) !important;
     --audio-track-outgoing: var(--superLightGray) !important;
-    --panel-background: var(--darkGray) !important;
-    --panel-background-colored: var(--darkGray) !important;
-    --dropdown-background-hover: var(--darkGray) !important;
-    --unread-marker-background: var(--mainColor) !important;
-    --video-primary: var(--mainColor) !important;
-    --button-alternative: var(--mainColor);
-    --incoming-background-deeper: var(--darkerGray);
-    --outgoing-background-deeper: var(--darkerGray);
-    --butterbar-connection-background: var(--darkestGray);
+    --panel-background: var(--theme-color-gray-700) !important;
+    --panel-background-colored: var(--theme-color-gray-700) !important;
+    --dropdown-background-hover: var(--theme-color-gray-700) !important;
+    --unread-marker-background: var(--theme-color-primary) !important;
+    --video-primary: var(--theme-color-primary) !important;
+    --button-alternative: var(--theme-color-primary);
+    --incoming-background-deeper: var(--theme-color-gray-800);
+    --outgoing-background-deeper: var(--theme-color-gray-800);
+    --butterbar-connection-background: var(--theme-color-gray-900);
     --butterbar-connection-primary: white;
     --butterbar-connection-secondary: var(--superLightGray);
-    --panel-header-background: var(--darkestGray);
+    --panel-header-background: var(--theme-color-gray-900);
     --system-message-background: transparent;
-    --button-primary-background-hover: var(--colorTonedGray);
-    --panel-background-deeper: var(--darkerGray);
-    --button-alternative: var(--mainColor);
-    --secondary-stronger: var(--whitish) !important;
-    --switch-button-checked-color: var(--mainColor);
-    --switch-track-checked-color: var(--lightGray);
-    --video-primary: var(--mainColor);
-    --rich-text-panel-background: var(--darkGray);
-    --mention-at-symbol: var(--mainColor);
+    --button-primary-background-hover: var(--theme-color-gray-toned);
+    --panel-background-deeper: var(--theme-color-gray-800);
+    --button-alternative: var(--theme-color-primary);
+    --secondary-stronger: var(--theme-color-white-700) !important;
+    --switch-button-checked-color: var(--theme-color-primary);
+    --switch-track-checked-color: var(--theme-color-gray-500);
+    --video-primary: var(--theme-color-primary);
+    --rich-text-panel-background: var(--theme-color-gray-700);
+    --mention-at-symbol: var(--theme-color-primary);
     --startup-background: var(--neumorph-bg) !important;
     --search-input-container-background: transparent;
-    --button-secondary: var(--mainColor) !important;
-    --icon-high-emphasis: var(--darkerGray);
-    --link: var(--mainColor) !important;
-    --teal: var(--mainColor) !important;
-    --unread-timestamp: var(--mainColor) !important;
-    --primary-strong: var(--mainColor);
-    --compose-input-background: var(--darkerGray) !important;
-    --compose-input-border: var(--darkerGray) !important;
-    --dropdown-background: var(--darkerGray) !important;
-    --drawer-section-background: var(--darkerGray) !important;
-    --drawer-background: var(--darkerGray) !important;
-    --app-background-stripe: var(--darkerGray) !important;
-    --modal-backdrop: var(--darkerGray) !important;
-    --button-secondary-border: var(--darkerGray) !important;
+    --button-secondary: var(--theme-color-primary) !important;
+    --icon-high-emphasis: var(--theme-color-gray-800);
+    --link: var(--theme-color-primary) !important;
+    --teal: var(--theme-color-primary) !important;
+    --unread-timestamp: var(--theme-color-primary) !important;
+    --primary-strong: var(--theme-color-primary);
+    --compose-input-background: var(--theme-color-gray-800) !important;
+    --compose-input-border: var(--theme-color-gray-800) !important;
+    --dropdown-background: var(--theme-color-gray-800) !important;
+    --drawer-section-background: var(--theme-color-gray-800) !important;
+    --drawer-background: var(--theme-color-gray-800) !important;
+    --app-background-stripe: var(--theme-color-gray-800) !important;
+    --modal-backdrop: var(--theme-color-gray-800) !important;
+    --button-secondary-border: var(--theme-color-gray-800) !important;
     --border-list: transparent;
-    --button-secondary-border: var(--darkerGray) !important;
-    --search-container-background: var(--darkerGray);
-    --border-stronger: var(--darkerGray);
-    --search-input-background: var(--darkGray);
-    --message-primary: var(--whitish);
+    --button-secondary-border: var(--theme-color-gray-800) !important;
+    --search-container-background: var(--theme-color-gray-800);
+    --border-stronger: var(--theme-color-gray-800);
+    --search-input-background: var(--theme-color-gray-700);
+    --message-primary: var(--theme-color-white-700);
     --link-preview: rgba(233, 237, 239, 0.87);
     --link-preview-light: rgba(233, 237, 239, 0.3);
     --conversation-panel-background: var(--dark);
-    --outgoing-background: var(--darkerGray);
-    --incoming-background: var(--darkGray);
+    --outgoing-background: var(--theme-color-gray-800);
+    --incoming-background: var(--theme-color-gray-700);
     --panel-input-background: var(--compose-input-background);
-    --secondary: var(--whitish);
+    --secondary: var(--theme-color-white-700);
+  }
+
+  /*========= chat =========*/
+  /*========= chat =========*/
+
+  .ooty25bp {
+    padding: 15px 20px !important;
+  }
+  ._1hl2r {
+    margin-bottom: 12px !important;
   }
 
   /*========= miscellanous =========*/
@@ -1142,7 +1153,7 @@
   }
 
   ._2gzeB {
-    background-color: var(--darkestGray) !important;
+    background-color: var(--theme-color-gray-900) !important;
   }
   ._2T2Kt.vBu41 {
     background: radial-gradient(
@@ -1198,7 +1209,7 @@
   }
 
   ._2gzeB {
-    background-color: var(--darkestGray) !important;
+    background-color: var(--theme-color-gray-900) !important;
   }
   ._2T2Kt.vBu41 {
     background: radial-gradient(
@@ -1217,7 +1228,7 @@
   header._1G3Wr,
   header._23P3O {
     padding: 40px 30px !important;
-    background-color: var(--darkestGray) !important;
+    background-color: var(--theme-color-gray-900) !important;
   }
   header._1G3Wr ._3GlyB,
   header ._2YnE3 {
@@ -1239,7 +1250,7 @@
     top: 0px;
     position: relative;
     border-radius: 10px;
-    color: var(--mainColor);
+    color: var(--theme-color-primary);
   }
   .V-zSs {
     padding: 20px 9% !important;
@@ -1307,25 +1318,29 @@
   /*========= new messages notifications =========*/
   /*========= new messages notifications =========*/
 
-  ._1KV7I .Dvjym[role="gridcell"] {
+  .Dvjym[role="gridcell"] span:has(button) {
     position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  ._1KV7I .Dvjym[role="gridcell"] span:has(div) {
     position: absolute;
     left: 2px;
     top: 8px;
   }
 
   .ovhn1urg {
-    background-color: var(--mainColor);
+    background-color: var(--theme-color-primary);
     border-radius: 5px !important;
     padding: 4px !important;
     display: block;
     font-weight: 100 !important;
   }
   .Hy9nV {
-    color: var(--whitish);
+    color: var(--theme-color-white-700);
   }
   .Dvjym {
-    color: var(--lightGray) !important;
+    color: var(--theme-color-gray-500) !important;
   }
   ._1jLYl {
     border-radius: 10px;
@@ -1357,7 +1372,7 @@
   ._12x9I,
   ._3m_Xw:hover {
     cursor: pointer;
-    color: var(--mainColor) !important;
+    color: var(--theme-color-primary) !important;
   }
 
   /*========= bold text =========*/
@@ -1383,21 +1398,21 @@
 
   *::-webkit-scrollbar-track,
   *::-webkit-slider-runnable-track {
-    background: var(--lightGray) !important;
+    background: var(--theme-color-gray-500) !important;
   }
 
   body,
   span,
   header,
   div {
-    font-family: var(--fontFamily) !important;
+    font-family: var(--theme-font-primary) !important;
   }
   body {
     background-image: -webkit-linear-gradient(top, black, black) !important;
   }
 
   ::placeholder {
-    color: var(--lightGray);
+    color: var(--theme-color-gray-500);
   }
   /*======== overlay messages ======== */
   /*======== overlay messages ======== */
@@ -1409,10 +1424,10 @@
   ._1UyGr._18oGY {
     background: linear-gradient(
       15deg,
-      rgba(var(--lightGray), 0),
-      rgba(var(--lightGray), 0) 45%,
-      rgba(var(--lightGray), 0.12) 70%,
-      rgba(var(--lightGray), 0.33)
+      rgba(var(--theme-color-gray-500), 0),
+      rgba(var(--theme-color-gray-500), 0) 45%,
+      rgba(var(--theme-color-gray-500), 0.12) 70%,
+      rgba(var(--theme-color-gray-500), 0.33)
     ) !important;
   }
   [data-asset-intro-image-light],
@@ -1426,16 +1441,16 @@
   }
   progress,
   a._3FXB1 {
-    color: var(--mainColor) !important;
+    color: var(--theme-color-primary) !important;
   }
 
   input#input-chatlist-search {
-    background-color: var(--whitish) !important;
+    background-color: var(--theme-color-white-700) !important;
     border-radius: 5px;
     color: black;
   }
   progress[value]::-webkit-progress-value {
-    background-color: var(--mainColor) !important;
+    background-color: var(--theme-color-primary) !important;
   }
 
   ._8hzr9 {
@@ -1449,7 +1464,7 @@
   #app:after {
     display: flex;
     display: none;
-    color: var(--mainColor);
+    color: var(--theme-color-primary);
     content: var(--alertMessage);
     animation: alert 50s infinite linear;
     top: 0;
@@ -1461,7 +1476,7 @@
     position: fixed;
     animation-iteration-count: 1;
     z-index: 99999999999999999999999999;
-    background: var(--darkGray);
+    background: var(--theme-color-gray-700);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -1478,7 +1493,7 @@
   g[clip-path="url(#contact-SVGID_2_)"] path,
   g[clip-path="url(#rooms-SVGID_2_)"] path,
   ._3xkAl svg path {
-    fill: var(--mainColor) !important;
+    fill: var(--theme-color-primary) !important;
   }
 
   [data-icon="tail-out"] svg path,
@@ -1498,7 +1513,7 @@
   [data-icon="new-group"] svg path:nth-child(1),
   [data-icon="default-group"] svg path:nth-child(2) {
     fill: transparent !important;
-    stroke: var(--mainColor) !important;
+    stroke: var(--theme-color-primary) !important;
     stroke-width: 7px !important;
   }
 
@@ -1509,7 +1524,7 @@
   [data-icon="new-group"] svg path:nth-child(1),
   [data-icon="alert-battery"] svg path {
     fill: transparent !important;
-    stroke: var(--mainColor) !important;
+    stroke: var(--theme-color-primary) !important;
     stroke-width: 2px !important;
   }
   [data-icon="default-user"] {
@@ -1525,7 +1540,7 @@
   ._34Zo9,
   .RXmfT svg path,
   ._3fnYk {
-    stroke: var(--mainColor) !important;
+    stroke: var(--theme-color-primary) !important;
   }
 
   ._1jJLh span svg path,
@@ -1535,11 +1550,11 @@
   span[data-icon="ptt-in-blue"] svg path:first-child,
   span[data-icon="ptt-out-gray"] svg path:first-child,
   span[data-icon="ptt-in-gray"] svg path:first-child {
-    fill: var(--darkGray) !important;
+    fill: var(--theme-color-gray-700) !important;
   }
   ._3hV1n span svg path,
   ._2m8GO span svg path:nth-child(2) {
-    fill: var(--whitish) !important;
+    fill: var(--theme-color-white-700) !important;
   }
   .tail-container {
     display: none;
@@ -1741,7 +1756,7 @@
   ._3IBSU,
   ._1sNMG,
   ._1-lf9.NQl4z {
-    background-color: var(--darkGray) !important;
+    background-color: var(--theme-color-gray-700) !important;
   }
 
   ._3pkkz,
@@ -1870,7 +1885,7 @@
   ._1w-Ol,
   .sIvFa.CHSLU {
     border: none !important;
-    background: var(--darkerGray) !important;
+    background: var(--theme-color-gray-800) !important;
     color: var(--superLightGray) !important;
   }
 
@@ -2087,8 +2102,8 @@
   ._2gZCX._3tcao,
   ._2jRew,
   .iWqod._1MZM5 {
-    background-color: var(--darkerGray) !important;
-    color: var(--mainColor) !important;
+    background-color: var(--theme-color-gray-800) !important;
+    color: var(--theme-color-primary) !important;
   }
 
   /*======== mainColor color property ONLY ========*/
@@ -2193,7 +2208,7 @@
   .DNiBl,
   ._1C3Ha,
   ._3jR9Y {
-    color: var(--mainColor) !important;
+    color: var(--theme-color-primary) !important;
   }
 
   /*======== lightGray color ========*/
@@ -2204,7 +2219,7 @@
   ._25Ooe,
   ._3FXB1,
   ._204wf {
-    color: var(--lightGray);
+    color: var(--theme-color-gray-500);
   }
 
   /*======== lightGray color ========*/
@@ -2224,8 +2239,8 @@
     color: gray !important;
   }
 
-  /*======== mainColor background + var(--whitish) text ========*/
-  /*======== mainColor background + var(--whitish) text ========*/
+  /*======== mainColor background + var(--theme-color-white-700) text ========*/
+  /*======== mainColor background + var(--theme-color-white-700) text ========*/
 
   ._1AKfk,
   .nDKsM,
@@ -2279,23 +2294,23 @@
   .zaKsw:after,
   ._23LrM,
   .br6oik82 {
-    background-color: var(--mainColor) !important;
-    border-color: var(--mainColor) !important;
-    color: var(--whitish) !important;
+    background-color: var(--theme-color-primary) !important;
+    border-color: var(--theme-color-primary) !important;
+    color: var(--theme-color-white-700) !important;
     font-weight: 400;
   }
 
-  /*======== var(--whitish) background and border color ========*/
-  /*======== var(--whitish) background and border color ========*/
+  /*======== var(--theme-color-white-700) background and border color ========*/
+  /*======== var(--theme-color-white-700) background and border color ========*/
 
   input[type="range"]::-webkit-slider-runnable-track {
-    background-color: var(--whitish) !important;
-    border-color: var(--whitish) !important;
+    background-color: var(--theme-color-white-700) !important;
+    border-color: var(--theme-color-white-700) !important;
   }
 
   ._1hDF,
   ._2IweK {
-    border-color: var(--whitish) !important;
+    border-color: var(--theme-color-white-700) !important;
   }
 
   /*======== lighter gray hover background ========*/
@@ -2314,7 +2329,7 @@
   ._18oo2._19zgN .pXnLN,
   ._3K-bg,
   ._165_h {
-    background-color: var(--darkGray) !important;
+    background-color: var(--theme-color-gray-700) !important;
   }
 
   /*======== lighter gray hover background ========*/
@@ -2323,7 +2338,7 @@
   ._2BU3P,
   #side .uwk68,
   ._2mQtw {
-    background: var(--colorTonedGray) !important;
+    background: var(--theme-color-gray-toned) !important;
     padding: 20px !important;
   }
 
@@ -2360,7 +2375,7 @@
 
   span[data-icon="tail-in"],
   span[data-icon="tail-out"] {
-    color: var(--darkerGray) !important;
+    color: var(--theme-color-gray-800) !important;
   }
 
   /*======== border color transparent ========*/
@@ -2389,7 +2404,7 @@
   ._2359L ._1paHP,
   .diqd3znl,
   ._2AkjL._31gut {
-    border-color: var(--mainColor) !important;
+    border-color: var(--theme-color-primary) !important;
   }
 
   /*======== input background darkerGray, light border ========*/
@@ -2398,7 +2413,7 @@
   .DuUXI,
   ._2Evw0,
   ._3XUNQ {
-    background-color: var(--darkerGray) !important;
+    background-color: var(--theme-color-gray-800) !important;
   }
 
   /*========= seen messages icons =========*/
@@ -2446,7 +2461,7 @@
   span[data-icon="ptt-in-blue"] svg path:first-child,
   span[data-icon="ptt-out-gray"] svg path:first-child,
   span[data-icon="ptt-in-gray"] svg path:first-child {
-    fill: var(--darkerGray) !important;
+    fill: var(--theme-color-gray-800) !important;
   }
 
   /*========= group chat names =========*/
@@ -2460,7 +2475,7 @@
   ._1JCRe,
   div[data-animate-modal-body] ._3xWLK .-TvKO,
   ._16h0X {
-    color: var(--whitish) !important;
+    color: var(--theme-color-white-700) !important;
   }
   .zGvn8 span {
     color: inherit !important;
@@ -2470,7 +2485,7 @@
     margin-right: 5px;
   }
   ._1V82l path.primary {
-    fill: var(--whitish) !important;
+    fill: var(--theme-color-white-700) !important;
   }
   .color-1 span,
   .color-1 ._1VzZY,
@@ -2695,7 +2710,7 @@
 
   ._1kdBg:after {
     content: "Enjoy the darkness";
-    color: var(--mainColor) !important;
+    color: var(--theme-color-primary) !important;
     background-color: transparent !important;
     left: 50% !important;
     transform: translateX(-50%);
@@ -2756,8 +2771,8 @@
 
   @keyframes pulse {
     0% {
-      -webkit-box-shadow: 0 0 0 0px var(--mainColor);
-      box-shadow: 0 0 0 0px var(--mainColor);
+      -webkit-box-shadow: 0 0 0 0px var(--theme-color-primary);
+      box-shadow: 0 0 0 0px var(--theme-color-primary);
     }
     45% {
       -webkit-box-shadow: 0 0 0 15px #ff613800;

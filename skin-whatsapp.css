@@ -121,6 +121,11 @@
 		--message-primary: var(--whitish);
 		--link-preview: rgba(233, 237, 239, 0.87);
 		--link-preview-light: rgba(233, 237, 239, 0.3);
+		--conversation-panel-background: var(--dark);
+		--outgoing-background: var(--darkerGray);
+		--incoming-background: var(--darkGray);
+		--panel-input-background: var(--compose-input-background);
+		--secondary: var(--whitish);
 	}
 
 	/*========= miscellanous =========*/
@@ -1244,8 +1249,8 @@
 	.iHLo1,
 	.Y1iVg,
 	.P6z4j,
-	.dark bg-color-1,
-	.dark bg-color-2,
+	.bg-color-1,
+	.bg-color-2,
 	._15wNI,
 	._3PQ7V,
 	._2zynu:after,
@@ -1272,12 +1277,12 @@
 	.VOr2j,
 	.gMRg5,
 	.RXL_k,
-	.dark .bg-color-1,
+	.bg-color-1,
 	._3yI1b:before,
 	._27KDP:after,
 	._14wV4,
 	*::-webkit-scrollbar-thumb,
-	.dark .bg-color-2,
+	.bg-color-2,
 	.piNo6,
 	._2KNOi,
 	._3xWLK,
@@ -1496,12 +1501,12 @@
 	.color-51 ._1VzZY {
 		color: var(--cl-1) !important;
 	}
-	.dark .bg-color-1,
-	.dark .bg-color-11,
-	.dark .bg-color-21,
-	.dark .bg-color-31,
-	.dark .bg-color-41,
-	.dark .bg-color-51 {
+	.bg-color-1,
+	.bg-color-11,
+	.bg-color-21,
+	.bg-color-31,
+	.bg-color-41,
+	.bg-color-51 {
 		background-color: var(--cl-1) !important;
 	}
 	.color-2 span,
@@ -1518,12 +1523,12 @@
 	.color-52 ._1VzZY {
 		color: var(--cl-2) !important;
 	}
-	.dark .bg-color-2,
-	.dark .bg-color-12,
-	.dark .bg-color-22,
-	.dark .bg-color-32,
-	.dark .bg-color-42,
-	.dark .bg-color-52 {
+	.bg-color-2,
+	.bg-color-12,
+	.bg-color-22,
+	.bg-color-32,
+	.bg-color-42,
+	.bg-color-52 {
 		background-color: var(--cl-2) !important;
 	}
 	.color-3 span,
@@ -1540,12 +1545,12 @@
 	.color-53 ._1VzZY {
 		color: var(--cl-3) !important;
 	}
-	.dark .bg-color-3,
-	.dark .bg-color-13,
-	.dark .bg-color-23,
-	.dark .bg-color-33,
-	.dark .bg-color-43,
-	.dark .bg-color-53 {
+	.bg-color-3,
+	.bg-color-13,
+	.bg-color-23,
+	.bg-color-33,
+	.bg-color-43,
+	.bg-color-53 {
 		background-color: var(--cl-3) !important;
 	}
 	.color-4 span,
@@ -1562,12 +1567,12 @@
 	.color-54 ._1VzZY {
 		color: var(--cl-4) !important;
 	}
-	.dark .bg-color-4,
-	.dark .bg-color-14,
-	.dark .bg-color-24,
-	.dark .bg-color-34,
-	.dark .bg-color-44,
-	.dark .bg-color-54 {
+	.bg-color-4,
+	.bg-color-14,
+	.bg-color-24,
+	.bg-color-34,
+	.bg-color-44,
+	.bg-color-54 {
 		background-color: var(--cl-4) !important;
 	}
 	.color-5 span,
@@ -1584,12 +1589,12 @@
 	.color-55 ._1VzZY {
 		color: var(--cl-5) !important;
 	}
-	.dark .bg-color-5,
-	.dark .bg-color-15,
-	.dark .bg-color-25,
-	.dark .bg-color-35,
-	.dark .bg-color-45,
-	.dark .bg-color-55 {
+	.bg-color-5,
+	.bg-color-15,
+	.bg-color-25,
+	.bg-color-35,
+	.bg-color-45,
+	.bg-color-55 {
 		background-color: var(--cl-5) !important;
 	}
 	.color-6 span,
@@ -1606,12 +1611,12 @@
 	.color-56 ._1VzZY {
 		color: var(--cl-6) !important;
 	}
-	.dark .bg-color-6,
-	.dark .bg-color-16,
-	.dark .bg-color-26,
-	.dark .bg-color-36,
-	.dark .bg-color-46,
-	.dark .bg-color-56 {
+	.bg-color-6,
+	.bg-color-16,
+	.bg-color-26,
+	.bg-color-36,
+	.bg-color-46,
+	.bg-color-56 {
 		background-color: var(--cl-6) !important;
 	}
 	.color-7 span,
@@ -1628,12 +1633,12 @@
 	.color-57 ._1VzZY {
 		color: var(--cl-7) !important;
 	}
-	.dark .bg-color-7,
-	.dark .bg-color-17,
-	.dark .bg-color-27,
-	.dark .bg-color-37,
-	.dark .bg-color-47,
-	.dark .bg-color-57 {
+	.bg-color-7,
+	.bg-color-17,
+	.bg-color-27,
+	.bg-color-37,
+	.bg-color-47,
+	.bg-color-57 {
 		background-color: var(--cl-7) !important;
 	}
 	.color-8 span,
@@ -1650,12 +1655,12 @@
 	.color-58 ._1VzZY {
 		color: var(--cl-8) !important;
 	}
-	.dark .bg-color-8,
-	.dark .bg-color-18,
-	.dark .bg-color-28,
-	.dark .bg-color-38,
-	.dark .bg-color-48,
-	.dark .bg-color-58 {
+	.bg-color-8,
+	.bg-color-18,
+	.bg-color-28,
+	.bg-color-38,
+	.bg-color-48,
+	.bg-color-58 {
 		background-color: var(--cl-8) !important;
 	}
 	.color-9 span,
@@ -1672,12 +1677,12 @@
 	.color-59 ._1VzZY {
 		color: var(--cl-9) !important;
 	}
-	.dark .bg-color-9,
-	.dark .bg-color-19,
-	.dark .bg-color-29,
-	.dark .bg-color-39,
-	.dark .bg-color-49,
-	.dark .bg-color-59 {
+	.bg-color-9,
+	.bg-color-19,
+	.bg-color-29,
+	.bg-color-39,
+	.bg-color-49,
+	.bg-color-59 {
 		background-color: var(--cl-9) !important;
 	}
 	.color-10 span,
@@ -1694,12 +1699,12 @@
 	.color-60 ._1VzZY {
 		color: var(--cl-10) !important;
 	}
-	.dark .bg-color-10,
-	.dark .bg-color-20,
-	.dark .bg-color-30,
-	.dark .bg-color-40,
-	.dark .bg-color-50,
-	.dark .bg-color-60 {
+	.bg-color-10,
+	.bg-color-20,
+	.bg-color-30,
+	.bg-color-40,
+	.bg-color-50,
+	.bg-color-60 {
 		background-color: var(--cl-10) !important;
 	}
 

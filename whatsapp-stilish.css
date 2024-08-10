@@ -619,6 +619,8 @@
     --modal-backdrop-solid-rgb: 17, 27, 33;
     --modal-background: #3b4a54;
     --modal-background-rgb: 59, 74, 84;
+    --navbar-background: var(--theme-color-gray-700);
+    --navbar-border: var(--theme-color-gray-900);
     --notification-biz-background: #182229;
     --notification-biz-background-rgb: 24, 34, 41;
     --notification-biz-text: #55fad9;
@@ -1122,6 +1124,10 @@
 
   /*========= miscellanous =========*/
   /*========= miscellanous =========*/
+
+  .lvkpixa0 {
+    display: none !important;
+  }
 
   ._1XkO3,
   ._1lPgH,
